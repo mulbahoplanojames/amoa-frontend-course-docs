@@ -6,6 +6,11 @@
 
 import { themes as prismThemes } from "prism-react-renderer";
 
+// module.exports = {
+//   // other configurations...
+//   onBrokenLinks: "ignore", // or 'warn'
+// };
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Tech Space",
@@ -59,7 +64,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: "img/docusaurus-social-car",
+      image: "img/techspace.jpg",
       navbar: {
         title: "TechSpace",
         logo: {
@@ -89,7 +94,7 @@ const config = {
             items: [
               {
                 label: "Tutorial",
-                to: "/docs/intro",
+                to: "/intro",
               },
             ],
           },
@@ -113,10 +118,6 @@ const config = {
           {
             title: "More",
             items: [
-              {
-                label: "Blog",
-                to: "/blog",
-              },
               {
                 label: "GitHub",
                 href: "https://github.com/facebook/docusaurus",
