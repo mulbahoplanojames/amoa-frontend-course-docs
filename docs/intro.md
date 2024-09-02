@@ -14,8 +14,8 @@ This course is a collaborative effort by a group of passionate developers who ca
 
 ### Founders
 
-- **[Oplano James Mulbah]** - [Brief background, e.g., years of experience, areas of expertise]
-- **[Abdalla Aleer]** - [Brief background, e.g., contributions to open-source, teaching experience]
+- **[Oplano James Mulbah]** - [Front End Engineer @ React js , JavaScript, HTML, CSS, Git, Typescript, Tailwind CSS, GitHub, Bootstrap]
+- **[Abdalla Aleer]** - [Back End Engineer @ Python, Django, SQL, Git, GitHub, Firebase, AWS, Postgress]
 - **[Founder 3 Name]** - [Brief background, e.g., industry experience, specific programming focus]
 
 Our mission is to create a learning environment that is both supportive and challenging, encouraging growth and innovation among all participants. We believe that by sharing our collective knowledge and experience, we can help you achieve your goals in the world of Python programming and in many other fields.
