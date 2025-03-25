@@ -1,0 +1,258 @@
+---
+title: HTML Form Control
+description: This is the Form Control section of the html Documentation
+sidebar:
+  order: 16.2
+---
+
+HTML form controls are interactive elements that allow users to input data into a web form. These controls can take various forms, such as text fields, buttons, checkboxes, radio buttons, and more. Each type of form control serves a specific purpose and is used to collect different types of information from users.
+
+### Common HTML Form Controls
+
+- **Text Input (`<input type="text">`)**
+
+  - Description: A single-line text input field that allows users to enter text.
+  - Example:
+
+  ```html
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username" required />
+  ```
+
+- **Password Input (`<input type="password">`)**
+
+  - Description: A text input field that hides the characters entered, typically used for passwords.
+  - Example:
+
+  ```html
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" required />
+  ```
+
+- **Email Input (`<input type="email">`)**
+
+  - Description: A text input field specifically for email addresses, which can include validation for proper email format.
+  - Example:
+
+  ```html
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required />
+  ```
+
+- **Number Input (`<input type="number">`)**
+
+  - Description: A field that allows users to enter numeric values. It can include attributes for setting minimum and maximum values.
+  - Example:
+
+  ```html
+  <label for="age">Age:</label>
+  <input type="number" id="age" name="age" min="1" max="100" />
+  ```
+
+- **Radio Buttons (`<input type="radio">`)**
+  - Description: Allows users to select one option from a set of predefined options. All radio buttons in a group must have the same name attribute.
+  - Example:
+
+```html
+<label><strong>Gender:</strong></label>
+
+<input type="radio" id="male" name="gender" value="male" />
+
+<label for="male">Male</label>
+
+<input type="radio" id="female" name="gender" value="female" />
+
+<label for="female">Female</label>
+```
+
+- **Checkboxes (`<input type="checkbox">`) **
+
+  - Description: Allows users to select one or more options from a set. Each checkbox operates independently.
+  - Example:
+
+  ```html
+  <label><strong>Hobbies:</strong></label>
+
+  <input type="checkbox" id="reading" name="hobbies" value="reading" />
+
+  <label for="reading">Reading</label>
+
+  <input type="checkbox" id="traveling" name="hobbies" value="traveling" />
+
+  <label for="traveling">Traveling</label>
+
+  <input type="checkbox" id="sports" name="hobbies" value="sports" />
+
+  <label for="sports">Sports</label>
+  ```
+
+- **Select Dropdown (`<select>`)**
+  - Description: Creates a dropdown list from which users can select one option. It can also include multiple options.
+  - Example:
+
+```html
+<label for="country">Country:</label>
+
+<select id="country" name="country">
+  <option value="usa">USA</option>
+
+  <option value="canada">Canada</option>
+
+  <option value="uk">UK</option>
+</select>
+```
+
+- **Textarea (`<textarea>`)**
+
+  - Description: A multi-line text input field that allows users to enter larger amounts of text.
+  - Example:
+
+  ```html
+  <label for="comments">Comments:</label>
+
+  <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+  ```
+
+- **Button (`<button>`)**
+
+  - Description: Creates a clickable button that can be used to submit forms or trigger actions.
+  - Example:
+
+  ```html
+  <button type="submit">Submit</button>
+  ```
+
+- \*\*File Input (`<input type="file">`)"
+
+  - Description: Allows users to upload files from their device.
+  - Example:
+
+  ```html
+  <label for="fileUpload">Upload File:</label>
+
+  <input type="file" id="fileUpload" name="fileUpload" />
+  ```
+
+- **Datalist (`<datalist>`)**
+
+- Description: Provides a set of predefined options for an `<input>` element, allowing users to select from a list or enter their own value.
+
+###### Example:
+
+```html
+<label for="browser">Choose a browser:</label>
+
+<input list="browsers" id="browser" name="browser" />
+
+<datalist id="browsers">
+  <option value="Chrome"></option>
+
+  <option value="Firefox"></option>
+
+  <option value="Safari"></option>
+
+  <option value="Edge"></option>
+</datalist>
+```
+
+### Example of an HTML Form with Various Controls
+
+Here’s an example of an HTML form that includes various types of form controls:
+
+```html
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>HTML Form Controls Example</title>
+  </head>
+
+  <body>
+    <h1>User Registration</h1>
+
+    <form action="/submit_registration" method="post">
+      <label for="username">Username:</label>
+
+      <input type="text" id="username" name="username" required />
+
+      <br /><br />
+
+      <label for="email">Email:</label>
+
+      <input type="email" id="email" name="email" required />
+
+      <br /><br />
+
+      <label for="password">Password:</label>
+
+      <input type="password" id="password" name="password" required />
+
+      <br /><br />
+
+      <label><strong>Gender:</strong></label>
+
+      <input type="radio" id="male" name="gender" value="male" required />
+
+      <label for="male">Male</label>
+
+      <input type="radio" id="female" name="gender" value="female" />
+
+      <label for="female">Female</label>
+
+      <br /><br />
+
+      <label><strong>Hobbies:</strong></label>
+
+      <input type="checkbox" id="reading" name="hobbies" value="reading" />
+
+      <label for="reading">Reading</label>
+
+      <input type="checkbox" id="traveling" name="hobbies" value="traveling" />
+
+      <label for="traveling">Traveling</label>
+
+      <input type="checkbox" id="sports" name="hobbies" value="sports" />
+
+      <label for="sports">Sports</label>
+
+      <br /><br />
+
+      <label for="country">Country:</label>
+
+      <select id="country" name="country">
+        <option value="usa">USA</option>
+
+        <option value="canada">Canada</option>
+
+        <option value="uk">UK</option>
+      </select>
+
+      <br /><br />
+
+      <label for="comments">Comments:</label>
+
+      <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+
+      <br /><br />
+
+      <label for="fileUpload">Upload File:</label>
+
+      <input type="file" id="fileUpload" name="fileUpload" />
+
+      <br /><br />
+
+      <input type="submit" value="Register" />
+    </form>
+  </body>
+</html>
+```
+
+### Conclusion
+
+HTML form controls are essential components for creating interactive forms that allow users to input data. By using various types of controls such as text inputs, radio buttons, checkboxes, dropdowns, and more, you can effectively gather the information you need from users.
+
+Understanding how to implement and utilize these form controls will enhance the user experience on your website, making it easier for users to provide their information. Properly designed forms can lead to higher user engagement and satisfaction, ultimately contributing to the success of your web applications.
+
+```
+
+```

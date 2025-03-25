@@ -1,0 +1,381 @@
+---
+title: HTML Form
+description: This is the Form section of the html Documentation
+sidebar:
+  order: 16
+---
+
+An HTML form is a section of a webpage designed for collecting data from users, which is then sent to a server for further processing. Forms are essential for user interaction on websites, allowing users to submit information such as registration details, feedback, and more.
+
+### What are HTML Forms?
+
+HTML forms are collections of interactive controls and various input types, such as text fields, numbers, email addresses, passwords, radio buttons, checkboxes, and buttons. These controls allow users to input data, which can then be processed by a server.
+
+### The `<form>` Element
+
+The HTML `<form>` element defines a form to collect user information in an HTML document. It acts as a container for all the input-related elements.
+
+Syntax
+
+The basic syntax for the `<form>` element is as follows:
+
+```html
+<form>
+  <!-- Form elements -->
+</form>
+```
+
+A more detailed syntax includes attributes that specify how the form behaves:
+
+```html
+<form
+  action="url"
+  method="method_type"
+  target="target_value"
+  enctype="enctype_value"
+>
+  <!-- Form elements -->
+</form>
+```
+
+### Why Use HTML Forms?
+
+HTML forms are used to collect user information from a webpage and send it to a server. Common uses for HTML forms include:
+
+- Creating registration forms for user sign-ups.
+- Collecting data through surveys and feedback forms.
+- Uploading files such as images or resumes.
+
+### Creating an HTML Form
+
+To create an HTML form, use the `<form>` element along with other required elements based on the information you want to collect, such as input boxes, buttons, radio buttons, and checkboxes. These elements are known as form controls.
+
+### Example of an HTML Form
+
+Here’s an example of a simple HTML form with various input elements:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Form Example</title>
+  </head>
+
+  <body>
+    <h1>HTML Form Example</h1>
+
+    <form>
+      <!-- Text Input -->
+      <label for="name"><strong>Name:</strong></label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter your name"
+        required
+      />
+      <br /><br />
+
+      <!-- Radio Buttons -->
+
+      <label><strong>Gender:</strong></label>
+
+      <input type="radio" id="male" name="gender" value="male" />
+
+      <label for="male">Male</label>
+
+      <input type="radio" id="female" name="gender" value="female" />
+
+      <label for="female">Female</label>
+
+      <br /><br />
+
+      <!-- Checkboxes -->
+
+      <label><strong>Hobbies:</strong></label>
+
+      <input type="checkbox" id="reading" name="hobbies" value="reading" />
+
+      <label for="reading">Reading</label>
+
+      <input type="checkbox" id="traveling" name="hobbies" value="traveling" />
+
+      <label for="traveling">Traveling</label>
+
+      <input type="checkbox" id="sports" name="hobbies" value="sports" />
+
+      <label for="sports">Sports</label>
+
+      <br /><br />
+
+      <!-- Submit Button -->
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
+```
+
+### HTML Form with Redirection
+
+In the previous example, we created a form that accepts user input but does not process the data. In this example, users will be redirected to a specified URL upon form submission, provided that required fields are filled out.
+
+###### Example of Form with Redirection
+
+```html
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Sample HTML Form</title>
+  </head>
+
+  <body>
+    <form action="https://www.tutorialspoint.com/" method="post">
+      <label for="first_name">First Name:</label>
+
+      <input type="text" id="first_name" name="first_name" required />
+
+      <br /><br />
+
+      <label for="last_name">Last Name:</label>
+
+      <input type="text" id="last_name" name="last_name" required />
+
+      <br /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
+```
+
+### Form Elements
+
+There are various elements that can be used within the `<form>` element. Here are some of the most common ones:
+
+- The `<form>` Element: The container for all other form elements.
+
+```html
+<form>.....</form>
+```
+
+- The `<input>` Element: Used to gather user input.
+
+```html
+<input type="text" />
+```
+
+- The `<label>` Element: Represents a caption for a form control.
+
+```html
+<label>Label Text</label>
+```
+
+- The `<legend>` Element: Specifies the caption for the `<fieldset>` tag.
+
+```html
+<legend>Legend Text</legend>
+```
+
+- The `<select>` Element: Creates a dropdown list.
+
+```html
+<select>
+  ....
+</select>
+```
+
+- The `<button>` Element: Creates a clickable button.
+
+```html
+<button>Button</button>
+```
+
+- The `<fieldset>` Element: Groups several controls within a web form.
+
+```html
+<fieldset>....</fieldset>
+```
+
+- The `<datalist>` Element: Contains a set of `<option>` elements for autocomplete.
+
+```html
+<datalist>....</datalist>
+```
+
+- The `<output>` Element: Displays the results of calculations or scripts.
+
+```html
+<output>Results...</output>
+```
+
+- The `<option>` Element: Defines items in a dropdown list or datalist.
+
+```html
+<option>Option Text</option>
+```
+
+- The `<optgroup>` Element: Groups related `<option>` elements in a dropdown.
+
+```html
+<optgroup>
+  <option>Option 1</option>
+</optgroup>
+```
+
+- The `<textarea>` Element: Represents a multiline text input.
+
+```html
+<textarea>Text...</textarea>
+```
+
+### Form Attributes
+
+HTML form attributes provide specific functionalities, such as redirection to other web pages, auto-completion of text, etc. Here are some common form attributes:
+
+| Attribute    | Description                                                                          |
+| ------------ | ------------------------------------------------------------------------------------ |
+| action       | Specifies a URL that processes the form submission.                                  |
+| method       | Defines which HTTP method to use when submitting the form (e.g., GET or POST).       |
+| target       | Specifies where to open the linked document (e.g., \_blank, \_self).                 |
+| autocomplete | Allows you to set whether the autocomplete for the form should be on or off.         |
+| enctype      | Specifies how the form input data should be encoded before sending it to the server. |
+| novalidate   | Indicates that the form data should not be validated when submitted.                 |
+
+### Styling HTML Forms
+
+You can customize the appearance of HTML forms and their elements using CSS to match your website's theme or to make them more visually appealing.
+
+Here’s an example of an HTML form styled with CSS:
+
+```html
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>HTML Form</title>
+
+    <style>
+      body {
+        font-family: "Segoe UI", Arial, sans-serif;
+      }
+
+      form {
+        width: 100%;
+
+        max-width: 400px;
+
+        background-color: #e8f5e9;
+
+        padding: 20px;
+
+        border: 1px solid #ccc;
+
+        border-radius: 5px;
+      }
+
+      legend {
+        font-size: 1.2rem;
+
+        font-weight: bold;
+
+        margin-bottom: 10px;
+      }
+
+      label {
+        display: block;
+
+        margin-bottom: 5px;
+
+        font-size: 0.9rem;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="password"],
+      textarea {
+        width: 100%;
+
+        padding: 8px;
+
+        margin-bottom: 15px;
+
+        border: 1px solid #ccc;
+
+        border-radius: 4px;
+
+        box-sizing: border-box;
+      }
+
+      textarea {
+        resize: none; /* Prevent resizing of the textarea */
+      }
+
+      input[type="submit"] {
+        width: 100%;
+
+        padding: 10px;
+
+        font-size: 1rem;
+
+        color: #fff;
+
+        background-color: #04af2f;
+
+        border: none;
+
+        border-radius: 4px;
+
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #039325; /* Change color on hover */
+      }
+    </style>
+  </head>
+
+  <body>
+    <form>
+      <fieldset>
+        <legend>Registration Form</legend>
+
+        <label for="firstName">First Name</label>
+
+        <input type="text" id="firstName" name="FirstName" required />
+
+        <label for="lastName">Last Name</label>
+
+        <input type="text" id="lastName" name="LastName" required />
+
+        <label for="email">Email ID</label>
+
+        <input type="email" id="email" name="email" required />
+
+        <label for="password">Enter Your Password</label>
+
+        <input type="password" id="password" name="password" required />
+
+        <label for="confirmPass">Confirm Your Password</label>
+
+        <input type="password" id="confirmPass" name="confirmPass" required />
+
+        <label for="address">Address</label>
+
+        <textarea id="address" name="address"></textarea>
+
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
+```
+
+### Conclusion
+
+HTML forms are a crucial part of web development, enabling the collection of user input for various purposes, such as registration, feedback, and data submission. By using the `<form>` element along with various input types and attributes, you can create interactive and user-friendly forms.
+
+Understanding how to effectively use form elements, attributes, and styling will enhance the user experience on your website, making it easier for users to provide the information you need. With proper validation and styling, forms can be both functional and visually appealing, contributing to the overall quality of your web applications.

@@ -1,0 +1,117 @@
+---
+title: HTML Form Attributes
+description: This is the Form Attributes section of the HTML Form Documentation
+sidebar:
+  order: 16.1
+---
+
+HTML form attributes provide specific functionalities that enhance the behavior and processing of forms. These attributes allow developers to control how form data is submitted, how it is processed, and how the form interacts with the user. Below are some of the most commonly used form attributes.
+
+### Common HTML Form Attributes
+
+- **action**: Specifies the URL to which the form data will be sent when the form is submitted. This URL can point to a server-side script that processes the data.
+
+###### Example:
+
+```html
+<form action="/submit_form.php" method="post"></form>
+```
+
+- **method**: Defines the HTTP method to use when submitting the form. The two most common methods are:
+
+  - GET: Appends form data to the URL, visible in the address bar.
+  - POST: Sends form data in the body of the HTTP request, not visible in the address bar.
+
+###### Example:
+
+```html
+<form action="/submit_form.php" method="post"></form>
+```
+
+- **target**: Specifies where to open the linked document after form submission. Common values include:
+
+  - \_blank: Opens the document in a new window or tab.
+  - \_self: Opens the document in the same frame (default).
+  - \_parent: Opens the document in the parent frame.
+  - \_top: Opens the document in the full body of the window.
+
+###### Example:
+
+```html
+<form action="/submit_form.php" method="post" target="_blank"></form>
+```
+
+- **autocomplete**: Allows you to set whether the browser should enable or disable autocomplete for the form. Possible values are on (default) or off.
+
+###### Example:
+
+```html
+<form action="/submit_form.php" method="post" autocomplete="off"></form>
+```
+
+- **enctype**: Specifies how the form input data should be encoded before sending it to the server. Common values include:
+
+  - application/x-www-form-urlencoded: Default encoding for forms.
+  - multipart/form-data: Used for forms that include file uploads.
+  - text/plain: Sends data as plain text.
+
+###### Example:
+
+```html
+<form action="/upload.php" method="post" enctype="multipart/form-data"></form>
+```
+
+- **novalidate**: Indicates that the form data should not be validated when submitted. This is useful for forms that require custom validation.
+
+###### Example:
+
+```html
+<form action="/submit_form.php" method="post" novalidate></form>
+```
+
+### Example of an HTML Form with Attributes
+
+Here’s an example of an HTML form that utilizes several of the attributes mentioned above:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Form with Attributes</title>
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <form
+      action="/submit_registration.php"
+      method="post"
+      target="_self"
+      enctype="multipart/form-data"
+      autocomplete="on"
+    >
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required />
+      <br />
+      <br />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      <br />
+      <br />
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
+      <br />
+      <br />
+      <label for="profile_picture">Profile Picture:</label>
+      <input type="file" id="profile_picture" name="profile_picture" />
+      <br />
+      <br />
+      <input type="submit" value="Register" />
+    </form>
+  </body>
+</html>
+```
+
+### Conclusion
+
+HTML form attributes play a crucial role in defining how forms behave and how data is processed. By understanding and effectively using attributes like action, method, target, autocomplete, enctype, and novalidate, you can create forms that are not only functional but also user-friendly and secure.
+
+Properly utilizing these attributes enhances the user experience, ensures data is submitted correctly, and allows for better interaction with server-side scripts. Whether you are creating simple contact forms or complex registration forms, mastering form attributes is essential for effective web development.
