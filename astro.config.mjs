@@ -9,7 +9,8 @@ import mdx from "@astrojs/mdx";
 export default defineConfig({
   integrations: [
     starlight({
-      title: "AMOA Frontend Course Docs",
+      title: "AMOA",
+      favicon: "/favicon.ico",
       social: {
         github:
           "https://github.com/mulbahoplanojames/amoa-frontend-course-docs",

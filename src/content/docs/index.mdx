@@ -1,36 +1,51 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
+title: Welcome to AMOA Front-End <span class="text-blue-700">Course</span>
+description: Become a professional front-end developer by learning HTML, CSS, JavaScript, and React
 template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: Start your journey into front-end development with AMOA Front-End Course
   image:
-    file: ../../assets/houston.webp
+    file: ../../assets/hero.jpg
   actions:
-    - text: Example Guide
-      link: /guides/example/
+    - text: Get Started
+      link: /getting-started/introduction/
       icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
-      icon: external
-      variant: minimal
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
-
-## Next steps
+import "/src/styles/global.css";
+import { Card, CardGrid, Tabs, TabItem } from "@astrojs/starlight/components";
 
 <CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
-	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
+  <Card title="Free and Open Source" icon="github">
+    AMOA Tech is completely [free and open
+    source](https://github.com/mulbahoplanojames/amoa), giving developers the
+    freedom to use, modify, and contribute to the courses without limitations.
+  </Card>
+  <Card title="professional and Well Structured" icon="external">
+    AMOA Front-End Course is professional and well structured, making it an
+    ideal resource for those looking to learn front-end development.
+  </Card>
+  <Card
+    title="Follows a systematic learning path and Best Practices"
+    icon="puzzle"
+  >
+    AMOA Front-End Course follows a systematic learning path and best practices,
+    ensuring that you gain a solid foundation in front-end development.
+  </Card>
+  <Card title="It's Build for everyone" icon="seti:todo">
+    AMOA Front-End Course is built for everyone, regardless of their background
+    or experience level.
+  </Card>
 </CardGrid>
+
+<div class="pt-16 text-center">
+  <p class="text-2xl">
+    {new Date().getFullYear()} &copy; AMOA Tech. All rights reserved.
+  </p>
+  <p class="text-2xl">
+    Build and Manage with <span> ❤️ </span> by{" "}
+    <a href="https://amoa-courses.vercel.app" target="_blank">
+      AMOA Tech
+    </a>
+  </p>
+</div>
