@@ -1,0 +1,214 @@
+---
+title: HTML Headings
+description: This is the Headings section of the html Documentation
+sidebar:
+  order: 7
+---
+
+HTML headings define the hierarchy and structure of content on a webpage. They create a visual hierarchy, with the highest-level heading, `<h1>`, indicating the most important content or the main heading, and lower-level headings like `<h2>`, `<h3>`, `<h4>`, etc., used for subtopics.
+
+### Reasons to Use Headings
+
+Headings are crucial for structuring content and providing a clear visual indication of the beginning of new sections or topics. Properly structured headings enhance readability and improve the user experience on websites, ensuring that information is organized and easy to navigate.
+
+- **Heading Impact on SEO:** Well-organized headings help search engines understand the content structure and improve indexing.
+- **Highlighting Important Topics:** Proper use of heading tags keeps the content readable and accessible.
+
+### HTML Heading Tags
+
+Headings are defined using heading tags (`<h1>` to `<h6>`). It is important to use these tags to show the content structure on a webpage. The hierarchy of heading tags determines the importance of content and aids in creating a clear information flow for both users and search engines.
+
+###### Example
+
+The following example demonstrates the different levels of HTML headings:
+
+```html
+<!DOCTYPE html>
+
+<html>
+  <body>
+    <h1>This is Heading 1 (H1 Tag)</h1>
+
+    <h2>This is Heading 2 (H2 Tag)</h2>
+
+    <h3>This is Heading 3 (H3 Tag)</h3>
+
+    <h4>This is Heading 4 (H4 Tag)</h4>
+
+    <h5>This is Heading 5 (H5 Tag)</h5>
+
+    <h6>This is Heading 6 (H6 Tag)</h6>
+  </body>
+</html>
+```
+
+### Hierarchical Structure of Heading Tags
+
+Here is the hierarchy of heading tags from most to least significant:
+
+- The `<h1>` Tag: The top-level heading denotes the main topic or title of the entire page.
+- The `<h2>` Tag: Subheadings under `<h1>` represent major sections related to the main topic, providing more specific context.
+- The `<h3>` to `<h6>` Tags: These tags are used for further subsections or nested content within `<h2>` headings, offering a deeper level of hierarchy for organizing content.
+
+###### Examples of HTML Headings
+
+In the following example, we will use all the heading tags from `<h1>` to `<h6>`, each with different sizes and weights:
+
+```html
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Example of HTML Headings</title>
+  </head>
+
+  <body>
+    <h1>Heading 1: Main Heading of Page</h1>
+
+    <h2>Heading 2: Section</h2>
+
+    <h3>Heading 3: Subsection</h3>
+
+    <h4>Heading 4: Sub-subsection</h4>
+
+    <h5>Heading 5: Lower-level heading</h5>
+
+    <h6>Heading 6: Lowest-level heading</h6>
+  </body>
+</html>
+```
+
+### Styling Headings with CSS
+
+In the following example, we will apply styles such as font family, font color, and font size to the headings:
+
+```html
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Example of HTML Headings</title>
+
+    <style>
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: Verdana;
+      }
+
+      h1 {
+        color: Red;
+
+        font-size: 32px;
+      }
+
+      h2 {
+        color: Green;
+
+        font-size: 30px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Heading 1: Main Heading of Page</h1>
+
+    <h2>Heading 2: Section</h2>
+
+    <h3>Heading 3: Subsection</h3>
+
+    <h4>Heading 4: Sub-subsection</h4>
+
+    <h5>Heading 5: Lower-level heading</h5>
+
+    <h6>Heading 6: Lowest-level heading</h6>
+  </body>
+</html>
+```
+
+In this example, we applied the "Verdana" font style to all heading tags, set the "Red" color for the `<h1>` heading with a font size of 32px, and set the "Green" color for the `<h2>` heading.
+
+### Using HTML Tags Within Heading Tags
+
+HTML headings (`<h1>` to `<h6>`) serve as the main titles and subheadings for content organization. Within these heading tags, you can use various other HTML tags to enhance and structure your content effectively. Here are some examples:
+
+#### The `<span>` Tag
+
+You can use the `<span>` tag to apply inline styles or classes to specific portions of the text within a heading. This allows for custom styling of text within the heading.
+
+Example:
+
+```html
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Using <span> Tag</title>
+  </head>
+
+  <body>
+    <h2>This is a <span style="color: blue;">blue</span> word.</h2>
+  </body>
+</html>
+```
+
+In this example, the word "blue" within the heading is styled to appear in blue color.
+
+#### The `<a>` Tag for Links
+
+To create a link within a heading, use the `<a>` tag. This is useful for headings that lead to other pages or sections of your website.
+
+###### Example:
+
+```html
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Using <a> Tag for Links</title>
+  </head>
+
+  <body>
+    <h1><a href="https://www.tutorialspoint.com">Visit our website</a></h1>
+  </body>
+</html>
+```
+
+In this example, the heading is a clickable link that directs users to the specified URL.
+
+#### The `<em>` and `<strong>` Tags
+
+These tags are used for emphasizing text within headings. The `<em>` tag italicizes the text, while the `<strong>` tag makes it bold.
+
+###### Example:
+
+```html
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Using <em> and <strong> Tags</title>
+  </head>
+
+  <body>
+    <h3>This is <em>emphasized</em> and <strong>important</strong> text.</h3>
+  </body>
+</html>
+```
+
+In this example, the words "emphasized" and "important" are styled differently to highlight their significance.
+
+### Conclusion
+
+HTML headings are essential for creating a structured and organized layout for your web content. They not only help in defining the hierarchy of information but also enhance the readability and user experience of a webpage. By using heading tags appropriately, you can improve the SEO of your site, making it easier for search engines to understand the content structure.

@@ -1,0 +1,201 @@
+---
+title: HTML Link
+description: This is the Link section of the html Documentation
+sidebar:
+  order: 15
+---
+
+HTML links, also known as hyperlinks, are words or buttons that connect to another page or resource. When clicked, these links take the user to the specified destination. Hyperlinks are essential for navigation on the web, allowing users to move between different pages and resources seamlessly.
+What is a Hyperlink?
+
+A hyperlink is a specific type of link that allows users to navigate from one web page or resource to another by clicking on it. Hyperlinks can be created using text or images on a webpage. The HTML `<a>` (anchor) tag is used to create hyperlinks.
+The Anchor (`<a>`) Tag
+
+The anchor tag, or `<a>` tag, is a fundamental element that creates hyperlinks between two pages. Anything written between the opening `<a>` and the closing `</a>` tags becomes clickable. When someone clicks on it, the linked page will open.
+Syntax
+
+Here is the syntax to create a hyperlink in HTML:
+
+```html
+<a href="URL" target="_target_type">Link Text</a>
+```
+
+- **href:** Specifies the URL of the page or resource to link to.
+- **target:** Specifies where to open the linked document (optional).
+
+### Creating Hyperlinks (Linking Webpages/Documents)
+
+You can link to other webpages or documents by creating hyperlinks to specific words, images, or any HTML element. The href attribute specifies the page or document to be linked.
+
+###### Example
+
+Here’s a simple HTML document that demonstrates how to use a hyperlink:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hyperlink Example</title>
+  </head>
+
+  <body>
+    <p>Click the following link:</p>
+
+    <a href="https://www.tutorialspoint.com/" target="_self">Tutorials Point</a>
+  </body>
+</html>
+```
+
+In this example, clicking the link will take the user to the home page of Tutorials Point.
+
+### The target Attribute
+
+The target attribute specifies where the linked document will open. The possible values for the target attribute are:
+
+| Option      | Description                                               |
+| ----------- | --------------------------------------------------------- |
+| \_blank     | Opens the linked document in a new window or tab.         |
+| \_self      | Opens the linked document in the same frame (default).    |
+| \_parent    | Opens the linked document in the parent frame.            |
+| \_top       | Opens the linked document in the full body of the window. |
+| targetframe | Opens the linked document in a named target frame.        |
+
+Example of Different target Options
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hyperlink Example</title>
+    <base href="https://www.tutorialspoint.com/" />
+  </head>
+  <body>
+    <p>Click any of the following links:</p>
+    <a href="/html/index.htm" target="_blank">Opens in New</a> |
+    <a href="/html/index.htm" target="_self">Opens in Self</a> |
+    <a href="/html/index.htm" target="_parent">Opens in Parent</a> |
+    <a href="/html/index.htm" target="_top">Opens in Body</a>
+  </body>
+</html>
+```
+
+In this example, the links demonstrate how different target attributes affect how links open.
+
+```html
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Hyperlink Example</title>
+    <base href="https://www.tutorialspoint.com/" />
+  </head>
+
+  <body>
+    <p>Click any of the following links:</p>
+    <a href="/html/index.htm" target="_blank">Opens in New</a> |
+    <a href="/html/index.htm" target="_self">Opens in Self</a> |
+    <a href="/html/index.htm" target="_parent">Opens in Parent</a> |
+    <a href="/html/index.htm" target="_top">Opens in Body</a>
+  </body>
+</html>
+```
+
+This example demonstrates how different target attributes affect how links open.
+
+### Use of Base Path in Hyperlinks
+
+When linking HTML documents related to the same website, you can simplify your links by using the `<base>` tag in your HTML document header. This tag specifies a base path for all links, allowing you to use relative paths instead of full URLs.
+
+###### Example of Using the `<base>` Tag
+
+```html
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Hyperlink Example</title>
+    <base href="https://www.tutorialspoint.com/" />
+  </head>
+
+  <body>
+    <p>Click the following link:</p>
+    <a href="/html/index.htm" target="_blank">HTML Tutorial</a>
+  </body>
+</html>
+```
+
+In this example, the link to the HTML tutorial uses a relative path, thanks to the `<base>` tag.
+
+### Linking to a Page Section
+
+You can create links that navigate directly to a specific section of the same page. This is done by using the href attribute with a #id value, where #id targets an element on the page with a corresponding id attribute.
+
+###### Example of Linking to a Section
+
+```html
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <style>
+      div {
+        height: 900px; /* Just for demonstration */
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Ed-Tech</h2>
+
+    <div>
+      <p>Tutorialspoint: Simply Easy Learning</p>
+
+      <a href="#about">Know More</a>
+    </div>
+
+    <h2 id="about">Section 2</h2>
+
+    <div>
+      <p>
+        Tutorials Point is an online learning platform providing free tutorials,
+        paid premium courses, and eBooks.
+      </p>
+    </div>
+  </body>
+</html>
+```
+
+In this example, clicking "Know More" will take the user directly to the section with the id="about".
+
+### Styling Hyperlinks (Setting Link Color)
+
+You can set the colors of your links, active links, and visited links using the link, alink, and vlink attributes of the `<body>` tag.
+
+###### Example of Setting Link Colors
+
+```html
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Hyperlink Example</title>
+    <base href="https://www.tutorialspoint.com/" />
+  </head>
+
+  <body alink="#54A250" link="#040404" vlink="#F40633">
+    <p>Click the following link:</p>
+    <a href="/html/index.htm" target="_blank">HTML Tutorial</a>
+  </body>
+</html>
+```
+
+In this example, the colors of the links change based on their state (normal,
+active, visited). Downloadable Links HTML allows you to create downloadable
+links for files such as PDFs, DOCs, or ZIP files. To create a downloadable link,
+you can use the download attribute with the
+
+### Conclusion
+
+HTML hyperlinks are a fundamental aspect of web navigation, allowing users to move between different pages and resources easily. By using the `<a>` tag, you can create links to other webpages, documents, or specific sections within the same page. The `target` attribute allows you to control how and where the linked document opens, while the `<base>` tag simplifies linking within the same website.
+
+Additionally, you can style hyperlinks to enhance their appearance and create downloadable links for files. Understanding how to effectively use hyperlinks will significantly improve the usability and functionality of your web content, making it easier for users to navigate and access information.

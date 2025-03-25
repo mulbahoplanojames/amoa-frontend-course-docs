@@ -1,0 +1,178 @@
+---
+title: HTML Attributes
+description: This is the Attributes section of the html Documentation
+sidebar:
+  order: 6
+---
+
+We have previously explored various HTML tags and their basic usage, such as heading tags (`<h1>`), (`<h2>`), paragraph tags (`<p>`), and others. While we have used these tags in their simplest form, many HTML tags can also have attributes, which provide additional information about the elements.
+
+### What are HTML Attributes?
+
+HTML attributes are special words that provide extra information to an HTML element. They are placed inside the element's opening tag and are used to configure or adjust the element's behavior. Each attribute consists of two parts: a name and a value.
+
+- **Name:** The attribute name is the keyword, also known as the attribute identifier, which defines a specific characteristic for the element. For example, the paragraph `<p>`element can have an attribute called "align," which specifies the alignment of the paragraph on the page.
+
+- **Value:** The attribute value is the data or information assigned to that attribute. The value is enclosed in double quotes. For example, "left," "center," or "right" can be assigned to the "align" attribute in the paragraph tag.
+
+The syntax for an HTML element with an attribute is as follows:
+
+```html
+<tag_name attribute="value">...</tag_name>
+```
+
+### Rules and Characteristics
+
+Here are some important rules and characteristics of HTML attributes that you should follow:
+
+- Attributes are optional; they provide additional information about an HTML element.
+- Attributes consist of name and value pairs, but some attributes do not require a value; these are known as Boolean attributes.
+- An HTML element can have multiple attributes, which should be separated by spaces.
+- Attributes should always be written within the opening tag.
+- Most HTML elements can have attributes, except for a few like `<head>`, `<title>`, `<script>`, etc.
+- The W3C recommends using lowercase for attributes and enclosing values in quotes.
+
+### Example of HTML Attributes
+
+The following example demonstrates the use of attributes with HTML elements. Here, we use the align attribute with different paragraph elements:
+
+```html
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Example of HTML Attributes</title>
+  </head>
+
+  <body>
+    <p align="left">Left Aligned</p>
+
+    <p align="center">Center Aligned</p>
+
+    <p align="right">Right Aligned</p>
+  </body>
+</html>
+```
+
+### HTML Core Attributes
+
+The four core attributes that can be used on most HTML elements (though not all) are:
+
+- **The id Attribute:** The id attribute uniquely identifies an element within an HTML page. It allows you to distinguish between elements that may have the same name.
+
+```html
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>ID Attribute Example</title>
+  </head>
+
+  <body>
+    <p id="html">This paragraph explains what HTML is.</p>
+
+    <p id="css">This paragraph explains what Cascading Style Sheets are.</p>
+  </body>
+</html>
+```
+
+- **The title Attribute:** The title attribute provides a suggested title for the element. It is often displayed as a tooltip when the cursor hovers over the element.
+
+```html
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>The Title Attribute Example</title>
+  </head>
+
+  <body>
+    <h3 title="Hello HTML!">Titled Heading Tag Example</h3>
+  </body>
+</html>
+```
+
+- **The class Attribute:** The class attribute specifies one or more CSS classes for an HTML element. Multiple classes can be assigned to a single element.
+
+```html
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>The Class Attribute Example</title>
+  </head>
+
+  <body>
+    <div class="className1 className2">Content here</div>
+  </body>
+</html>
+```
+
+- **The style Attribute:** The style attribute allows you to write inline CSS rules for an element.
+
+```html
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>The Style Attribute</title>
+  </head>
+
+  <body>
+    <p style="font-family: Arial; color: #FF0000;">
+      Welcome to Tutorialspoint...
+    </p>
+  </body>
+</html>
+```
+
+### HTML Boolean Attributes
+
+Boolean attributes represent true and false values and do not require any value with the attribute name. To set the true value, simply include the attribute's name; to set it to false, omit the attribute altogether.
+
+Some common Boolean attributes include:
+
+- `disabled`
+- `readonly`
+- `required`
+- `inert`
+- `autocomplete`
+
+Here is an example of an HTML Boolean attribute (required):
+
+```html
+<!DOCTYPE html>
+
+<html>
+  <body>
+    <h1>Example of the "required" attribute</h1>
+
+    <form>
+      <label for="user_name">Input User Name:</label>
+
+      <input type="text" id="user_name" name="user_name" required />
+
+      <input type="submit" />
+    </form>
+  </body>
+</html>
+```
+
+### HTML Generic Attributes
+
+Here’s a table of some other attributes that can be used with many HTML tags:
+
+| Attribute  | Options                          | Function                                          |
+| ---------- | -------------------------------- | ------------------------------------------------- |
+| align      | right, left, center              | Horizontally aligns elements                      |
+| valign     | top, middle, bottom              | Vertically aligns elements within an HTML element |
+| bgcolor    | numeric, hexadecimal, RGB values | Places a background color behind an element       |
+| background | URL                              | Places a background image behind an element       |
+| id         | User Defined                     | Names an element for use with CSS                 |
+| class      | User Defined                     | Classifies an element for use with CSS            |
+| width      | Numeric Value                    | Specifies the width of tables, images, or cells   |
+| height     | Numeric Value                    | Specifies the height of tables, images, or cells  |
+
+### Conclusion
+
+HTML attributes are an essential part of HTML documents, providing additional information and configuration options for elements. By understanding and using HTML attributes, you can create more dynamic and interactive webpages. This tutorial has covered the basic concepts of HTML attributes, including the structure of an attribute, the rules and characteristics of attributes, and the four core attributes that can be used on most HTML elements. By mastering these concepts, you can create well-structured and visually appealing webpages.

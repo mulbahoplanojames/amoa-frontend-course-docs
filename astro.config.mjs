@@ -24,6 +24,7 @@ export default defineConfig({
         {
           label: "HTML Docs",
           autogenerate: { directory: "html" },
+          // items: [],
         },
         {
           label: "CSS Docs",

@@ -1,0 +1,176 @@
+---
+title: HTML Style Sheet
+description: This is the Style Sheet section of the html Documentation
+sidebar:
+  order: 10
+---
+
+CSS, or Cascading Style Sheets, is a powerful tool that defines how web documents look on screens or in print. Since its introduction in 1994, the World Wide Web Consortium (W3C) has encouraged the use of style sheets for web design. CSS allows you to control the presentation of your content, whether it's displayed on a screen, in print, or for accessibility, making web design more flexible and efficient.
+
+Cascading Style Sheets provide easy and effective alternatives to specify various attributes for HTML tags. With CSS, you can define a number of style properties for a given HTML element.
+
+### CSS Syntax
+
+Each CSS property has a name and a value, separated by a colon (:). Each property declaration is separated by a semicolon (;).
+
+###### Example of CSS in an HTML Document
+
+First, let's consider an example of an HTML document that uses the `<font>` tag and associated attributes to specify text color and font size:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML CSS</title>
+  </head>
+
+  <body>
+    <p>
+      <font color="green" size="5">Hello, World!</font>
+    </p>
+  </body>
+</html>
+```
+
+We can rewrite the above example using CSS as follows:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML CSS</title>
+  </head>
+
+  <body>
+    <p style="color:green; font-size:24px;">Hello, World!</p>
+  </body>
+</html>
+```
+
+### Cascading Effect
+
+The term "cascading" means that a style applied to a parent element will also apply to all child elements within that parent. Therefore, when applying styles to an element, you must be mindful of how those styles affect child elements. You can also apply different styles to child elements if needed.
+Ways to Use CSS in HTML
+
+There are three primary ways to include CSS in your HTML document:
+
+- **External CSS:** Define style sheet rules in a separate .css file and include that file in your HTML document using the `<link>` tag.
+- **Internal CSS:** Define style sheet rules in the header section of the HTML document using the `<style>` tag.
+- **Inline CSS:** Define style sheet rules directly within the HTML elements using the `style` attribute.
+
+###### Examples of Using CSS in HTML
+
+Let's explore all three methods with suitable examples.
+
+#### Using External CSS
+
+If you need to use your style sheet (CSS) across multiple pages, it's recommended to define a common style sheet in a separate file. A CSS file will have a .css extension and can be included in HTML files using the `<link>` tag.
+
+Example of External CSS File (style.css):
+
+```css
+.red {
+  color: red;
+}
+
+.thick {
+  font-size: 20px;
+}
+
+.green {
+  color: green;
+}
+```
+
+###### Example of HTML Document Using External CSS:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML External CSS</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <p class="red">This is red</p>
+    <p class="thick">This is thick</p>
+    <p class="green">This is green</p>
+    <p class="thick green">This is thick and green</p>
+  </body>
+</html>
+```
+
+#### Using Internal CSS
+
+If you want to apply style sheet rules to a single document only, you can include those rules in the header section of the HTML document using the `<style>` tag. Rules defined in the internal style sheet override those defined in an external CSS file.
+
+###### Example of HTML Document Using Internal CSS:
+
+```html
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>HTML Internal CSS</title>
+
+    <style type="text/css">
+      .red {
+        color: red;
+      }
+
+      .thick {
+        font-size: 20px;
+      }
+
+      .green {
+        color: green;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p class="red">This is red</p>
+    <p class="thick">This is thick</p>
+    <p class="green">This is green</p>
+    <p class="thick green">This is thick and green</p>
+  </body>
+</html>
+```
+
+#### Using Inline CSS
+
+You can apply style sheet rules directly to any HTML element using the style attribute of the relevant tag. This should be done only when you want to make a specific change to an individual HTML element. Rules defined inline override those defined in an external CSS file as well as those defined in the `<style>` element.
+
+### Using Inline CSS
+
+You can apply style sheet rules directly to any HTML element using the style attribute of the relevant tag. This should be done only when you want to make a specific change to an individual HTML element. Rules defined inline override those defined in an external CSS file as well as those defined in the `<style>` element.
+
+Example of HTML Document Using Inline CSS:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Inline CSS</title>
+  </head>
+
+  <body>
+    <p style="color:red;">This is red</p>
+
+    <p style="font-size:20px;">This is thick</p>
+
+    <p style="color:green;">This is green</p>
+
+    <p style="color:green; font-size:20px;">This is thick and green</p>
+  </body>
+</html>
+```
+
+In this example, each paragraph uses the style attribute to apply specific styles directly to the HTML elements. This method is useful for quick styling but is generally not recommended for larger projects due to maintainability concerns.
+
+### Conclusion
+
+CSS (Cascading Style Sheets) is an essential tool for web design, allowing you to control the presentation of your content across different devices and formats. By using CSS, you can enhance the visual appeal of your web pages and improve user experience.
+
+There are three primary methods to include CSS in your HTML documents: external CSS for shared styles across multiple pages, internal CSS for styles specific to a single document, and inline CSS for quick, one-off styles. Understanding how to effectively use these methods will help you create well-structured, visually appealing web pages that are easy to maintain and update.

@@ -1,4 +1,121 @@
 ---
 title: HTML Introduction
-description: This is the Introduction section of the html Documentation
+description: This is the Introduction to HTML Documentation
+sidebar:
+  order: 1
 ---
+
+### An Introduction to HTML
+
+HTML, which stands for HyperText Markup Language, is used to structure content on the web through various elements, commonly referred to as tags. These HTML elements define different sections of a webpage, such as headings, paragraphs, links to other webpages, lists, images, tables, and more. They inform the browser about how to display the content and its formatting.
+
+HTML is a combination of HyperText and Markup Language:
+
+- HyperText refers to the way web pages (HTML documents) are interconnected. The links available on a webpage are known as "HyperText."
+- Markup Language means that HTML is used to "mark up" a text document with tags that instruct a web browser on how to structure and display it.
+
+### What is an HTML Element?
+
+An HTML element is a fundamental building block for creating a webpage. It consists of a start tag, content, and an end tag. The content is placed between the start and end tags.
+
+The basic syntax of an HTML element is as follows:
+
+```html
+<tag_name>content</tag_name>
+```
+
+For example, the following demonstrates an HTML element:
+
+```html
+<h1>It is a top-level heading</h1>
+```
+
+In this example:
+
+- `<h1>` is the start tag.
+- "It is a top-level heading" is the content enclosed within the start and end tags.
+- `</h1>` is the closing tag.
+
+### HTML Page Structure
+
+The structure of an HTML page (or basic HTML structure) includes essential elements required to create an HTML document that can be displayed in a browser.
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page title</title>
+  </head>
+  <body>
+    <h1>Webpage's Heading</h1>
+    <p>Content (Your first paragraph).</p>
+  </body>
+</html>
+```
+
+The following components are part of the HTML page structure:
+
+- `<!DOCTYPE html>`: Defines the document type as HTML.
+- `<html>`: The root element of an HTML document, containing all other elements.
+- `<head>`: Contains scripts and styles that enhance page functionality, including meta tags.
+- `<title>`: Defines the title of the webpage.
+- `<body>`: Contains the main content of the webpage, with all elements displayed in the browser placed inside this tag.
+- `<h1>` and `<p>`: The `<h1>` tag defines the page heading, while the `<p>` tag defines a paragraph.
+
+### Basic HTML Tags
+
+Here are some fundamental HTML tags:
+
+- `<h1> to <h6>`: Heading tags used to create headings for the webpage, with `<h1>` being the top-level heading and `<h6>` the lowest.
+- `<p>`: Displays text as a paragraph on the webpage.
+- `<br> or <br />`: Inserts a line break in the webpage.
+- `<div>`: Defines a division or section on the webpage, allowing you to group multiple elements.
+- `<ul> and <ol>`: Insert list items on the webpage, with `<ol>` for ordered lists and `<ul>` for unordered lists.
+- `<img>`: Used to insert an image into the webpage.
+- `<a>`: Stands for "anchor" and is used to create links in the webpage.
+- `<pre>`: Preserves formatting in the text.
+
+### HTML First Example
+
+The first HTML example demonstrates the basic structure of an HTML page along with essential tags. Below is an example of an HTML document that includes all necessary and basic tags:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>HTML First Example</title>
+  </head>
+
+  <body>
+    <h1>Welcome to AMOA Tech</h1>
+
+    <p>A learning portal for students and professionals.</p>
+
+    <h2>About AMOA Tech</h2>
+
+    <p>
+      AMOA Tech originated from the idea that there exists a class of readers
+      who respond better to online content and prefer to learn new skills at
+      their own pace from the comforts of their drawing rooms.
+    </p>
+
+    <h2>Our Web Tutorials</h2>
+
+    <ul>
+      <li><a href="https://www.amoatech.com/html/index.htm">HTML</a></li>
+
+      <li><a href="https://www.amoatech.com/css/index.htm">CSS</a></li>
+
+      <li>
+        <a href="https://www.amoatech.com/javascript/index.htm">JavaScript</a>
+      </li>
+    </ul>
+  </body>
+</html>
+```
+
+### Web Browser Role
+
+A web browser's role is to read HTML documents from a specified path (either from a server or a local device) and display them as webpages. All major web browsers, such as Google Chrome, Safari, and Firefox, are capable of reading HTML documents. You can use any web browser to view your HTML document in web format.

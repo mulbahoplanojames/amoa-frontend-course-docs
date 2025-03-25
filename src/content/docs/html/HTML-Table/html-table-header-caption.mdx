@@ -1,0 +1,176 @@
+---
+title: HTML Table Header and Caption Tag
+description: This is the Table Header and Caption section of the html Documentation
+sidebar:
+  order: 13.1
+---
+
+In HTML tables, the `<thead>` and `<caption>` tags are used to enhance the structure and accessibility of tabular data. They provide important context and organization for the information presented in the table.
+
+### The `<thead>` Tag
+
+The `<thead>` tag is used to group the header content in a table. It helps to define a section of the table that contains header rows, making it easier for users and screen readers to understand the structure of the data.
+
+#### Purpose of the `<thead>` Tag
+
+- **Semantic Structure:** The `<thead>` tag provides a semantic way to define the header section of a table, improving the accessibility of the table for screen readers and other assistive technologies.
+
+- **Styling:** You can apply specific styles to the header section of the table using CSS, making it visually distinct from the body of the table.
+
+- **Improved Usability:** Grouping header rows with `<thead>` allows for better organization of data, especially in tables with multiple rows of headers.
+
+###### Example of Using the `<thead>` Tag
+
+Here’s an example demonstrating the use of the `<thead>` tag in an HTML table:
+
+```html
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>HTML Table with Thead</title>
+
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Product List</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Category</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Laptop</td>
+          <td>Electronics</td>
+          <td>$800</td>
+        </tr>
+
+        <tr>
+          <td>Bookshelf</td>
+          <td>Furniture</td>
+          <td>$150</td>
+        </tr>
+
+        <tr>
+          <td>Coffee Maker</td>
+          <td>Appliances</td>
+          <td>$50</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
+```
+
+In this example, the `<thead>` tag groups the header row of the table, making it clear which columns represent product names, categories, and prices.
+
+### The `<caption>` Tag
+
+The `<caption>` tag is used to provide a title or description for the table. It is placed immediately after the `<table>` tag and before any other table content. The caption helps users understand the purpose of the table at a glance.
+
+### Purpose of the `<caption>` Tag
+
+- **Descriptive Context:** The `<caption>` tag provides a brief description of the table's content, helping users quickly understand what the table represents.
+
+- **Accessibility:** Including a caption improves accessibility for screen readers, as it provides context for the data presented in the table.
+
+- **Visual Clarity:** The caption is typically displayed above the table, making it visually clear what the table is about.
+
+### Example of Using the `<caption>` Tag
+
+Here’s an example demonstrating the use of the `<caption>` tag in an HTML table:
+
+```html
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>HTML Table with Caption</title>
+
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Product List</h2>
+
+    <table>
+      <caption>
+        List of Products with Categories and Prices
+      </caption>
+
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Category</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Laptop</td>
+          <td>Electronics</td>
+          <td>$800</td>
+        </tr>
+
+        <tr>
+          <td>Bookshelf</td>
+          <td>Furniture</td>
+          <td>$150</td>
+        </tr>
+
+        <tr>
+          <td>Coffee Maker</td>
+          <td>Appliances</td>
+          <td>$50</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
+```
+
+In this example, the `<caption>` tag provides a clear description of the table's content, indicating that it lists products along with their categories and prices.
+
+### Conclusion
+
+The `<thead>` and `<caption>` tags are essential for enhancing the structure and accessibility of HTML tables. The `<thead>` tag groups header rows, improving semantic organization and usability, while the `<caption>` tag provides a descriptive title for the table, helping users understand its purpose. By using these tags effectively, you can create well-structured and accessible tables that improve the overall user experience on your web pages.

@@ -1,0 +1,177 @@
+---
+title: HTML Blocks
+description: This is the Blocks section of the html Documentation
+sidebar:
+  order: 9
+---
+
+HTML block elements are used to create the logical and semantic layout of a web page. They help organize content into meaningful sections, making it easier for browsers, search engines, and site visitors to understand the structure and meaning of different parts of the webpage. Inline elements can be used within block elements to enhance functionality, such as adding anchor links.
+
+### Categories of HTML Elements
+
+HTML elements can be categorized into two main types:
+
+- Block-level Elements
+- Inline Elements
+
+HTML Block-level Elements
+
+Block-level elements start on a new line, and any content that follows them appears on the next line. These elements can have margins to add space before and after them. By default, block-level elements take up the full width of their parent elements, but you can set their width using the CSS width property.
+List of HTML Block-level Elements
+
+The following table lists common block-level elements:
+
+### Block-level Elements
+
+| Element        | Description                                                                                           |
+| -------------- | ----------------------------------------------------------------------------------------------------- |
+| `<address>`    | Provides contact information for the author or owner of the document                                  |
+| `<article>`    | Defines an independent piece of content                                                               |
+| `<aside>`      | Defines content that is related to the main content                                                   |
+| `<blockquote>` | Defines a section that is quoted from another source                                                  |
+| `<canvas>`     | Defines a canvas for graphics                                                                         |
+| `<dd>`         | Defines a description list item                                                                       |
+| `<div>`        | Defines a division or section                                                                         |
+| `<dl>`         | Defines a description list                                                                            |
+| `<dt>`         | Defines a term in a description list                                                                  |
+| `<fieldset>`   | Defines a group of related form controls                                                              |
+| `<figcaption>` | Defines a caption for a `<figure>` element                                                            |
+| `<figure>`     | Defines a self-contained content block                                                                |
+| `<footer>`     | Defines the footer of a section or page                                                               |
+| `<form>`       | Defines a form for user input                                                                         |
+| `<h1> - <h6>`  | Defines a heading                                                                                     |
+| `<header>`     | Defines the header of a section or page                                                               |
+| `<hr>`         | Defines a horizontal line                                                                             |
+| `<li>`         | Defines a list item                                                                                   |
+| `<main>`       | Defines the main content of a section or page                                                         |
+| `<nav>`        | Defines a navigation section                                                                          |
+| `<noscript>`   | Defines a section of the document that is only processed when the browser does not support JavaScript |
+| `<ol>`         | Defines an ordered list                                                                               |
+| `<p>`          | Defines a paragraph                                                                                   |
+| `<pre>`        | Defines preformatted text                                                                             |
+| `<section>`    | Defines a section of a document                                                                       |
+| `<table>`      | Defines a table                                                                                       |
+| `<tfoot>`      | Defines the footer of a table                                                                         |
+| `<ul>`         | Defines an unordered list                                                                             |
+| `<video>`      | Defines a video                                                                                       |
+
+### Example of Block-level Elements
+
+The following example demonstrates the use of block-level elements. Here, we use a heading and two paragraphs separated by a horizontal line:
+
+```html
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>HTML Block Level Elements</title>
+  </head>
+
+  <body>
+    <h3>HTML Block Level Elements</h3>
+
+    <p>This line will appear on the next line after the heading.</p>
+
+    <hr />
+
+    <p>This line will appear after the horizontal line.</p>
+  </body>
+</html>
+```
+
+### HTML Inline Elements
+
+Inline elements can appear within the same line and do not start a new line on their own. They are typically used for styling or linking parts of text within block elements.
+List of HTML Inline Elements
+
+The following table lists common inline elements:
+
+### Inline Elements
+
+| Element      | Description                        |
+| ------------ | ---------------------------------- |
+| `<a>`        | Defines a hyperlink                |
+| `<abbr>`     | Defines an abbreviation            |
+| `<acronym>`  | Defines an acronym                 |
+| `<b>`        | Defines bold text                  |
+| `<bdo>`      | Defines the direction of text flow |
+| `<big>`      | Defines large text                 |
+| `<button>`   | Defines a button                   |
+| `<br>`       | Defines a line break               |
+| `<cite>`     | Defines a citation                 |
+| `<code>`     | Defines computer code              |
+| `<dfn>`      | Defines a definition               |
+| `<em>`       | Defines emphasized text            |
+| `<i>`        | Defines italic text                |
+| `<img>`      | Defines an image                   |
+| `<input>`    | Defines an input field             |
+| `<kbd>`      | Defines keyboard input             |
+| `<label>`    | Defines a label                    |
+| `<map>`      | Defines a map                      |
+| `<object>`   | Defines an object                  |
+| `<output>`   | Defines an output                  |
+| `<q>`        | Defines a short quotation          |
+| `<samp>`     | Defines sample computer code       |
+| `<script>`   | Defines a script                   |
+| `<select>`   | Defines a selection list           |
+| `<small>`    | Defines small text                 |
+| `<span>`     | Defines a span of text             |
+| `<strong>`   | Defines strong text                |
+| `<sub>`      | Defines subscript text             |
+| `<sup>`      | Defines superscript text           |
+| `<textarea>` | Defines a text area                |
+| `<time>`     | Defines a time and date            |
+| `<tt>`       | Defines teletype text              |
+| `<var>`      | Defines a variable                 |
+
+### Example of Inline Elements
+
+The following example demonstrates inline elements. Here, we make the text in the paragraphs bold and italic using inline elements `<b>` and `<i>`:
+
+```html
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>HTML Inline Element</title>
+  </head>
+
+  <body>
+    <h3>Inline Elements in HTML</h3>
+
+    <p>This <b>paragraph</b> is bold.</p>
+
+    <p>This is an <i>italic</i> paragraph.</p>
+  </body>
+</html>
+```
+
+### Grouping Block and Inline Elements
+
+Block-level and inline elements can be grouped using the `<div>` tag. The `<div>` tag is a block-level element that plays a significant role in grouping various other HTML tags and applying CSS to groups of elements.
+
+```html
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>HTML Grouping Block and Inline Elements</title>
+  </head>
+
+  <body>
+    <h3>Inline Elements in HTML</h3>
+
+    <p>This <b>paragraph</b> is bold.</p>
+
+    <p>This is an <i>italic</i> paragraph.</p>
+  </body>
+</html>
+```
+
+### Grouping Block and Inline Elements
+
+Block-level and inline elements can be grouped using the `<div>` tag. The `<div>` tag is a block-level element that plays a significant role in grouping various other HTML tags and applying CSS to groups of elements.
+
+### Conclusion
+
+HTML block elements and inline elements are essential for creating a well-structured and organized webpage. Block-level elements help define the layout and sections of the content, while inline elements allow for styling and linking specific parts of the text without disrupting the flow of the document.

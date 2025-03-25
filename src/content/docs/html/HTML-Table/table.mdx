@@ -1,0 +1,383 @@
+---
+title: HTML Table
+description: This is the Table section of the html Documentation
+sidebar:
+  order: 13
+---
+
+HTML tables are used to represent data in a structured format with rows and columns. They provide a visual structure that aids in clarity and comprehension, making them a fundamental element in web development.
+
+### Why HTML Tables are Used?
+
+HTML tables serve various purposes, primarily focused on organizing and presenting data effectively. Some key reasons for using tables include:
+
+- **Structuring Data:** Tables provide a coherent structure for organizing and displaying data, making it easier for users to interpret information.
+- **Comparative Presentation:** When there is a need to compare different sets of data side by side, such as the differences between two concepts, tables offer a clear and visually accessible format.
+- **Tabular Data Representation:** Information that naturally fits into rows and columns, such as schedules, statistics, or pricing tables, can be well-represented using HTML tables.
+
+### Creating an HTML Table
+
+You can create a table in HTML using the `<table>` tag along with several other tags that define the structure and content inside the table. The primary tags used with the `<table>` tag are:
+
+- **HTML `<table>` Tag:** This tag is used to create the table that wraps the rows and columns within it.
+- **HTML `<tr>` Tag:** Stands for "table row" and is used to create a row within the table.
+- **HTML `<td>` Tag:** Represents "table data" and is used to create standard cells within a row.
+- **HTML `<th>` Tag:** Represents "table header" and is used to create header cells within a row.
+
+### HTML Table Structure - Rows and Columns
+
+- **Rows:** Each row in an HTML table is defined using the `<tr>` tag. It contains a set of table cells (`<td>` or `<th>`), representing the individual elements within that row.
+- **Columns:** The actual data or header information is contained within the table cells. Cells in the same position in different rows form a column.
+
+### Example of an HTML Table
+
+Consider a table representing a simple list of products with their respective categories and prices. This basic table structure organizes data in a clear, tabular format, making it easy to read and understand. The border is an attribute of the `<table>` tag and is used to put a border around all the cells.
+
+```html
+<!DOCTYPE html>
+
+<html>
+  <body>
+    <table border="1">
+      <tr>
+        <th>Product</th>
+        <th>Category</th>
+        <th>Price</th>
+      </tr>
+
+      <tr>
+        <td>Laptop</td>
+        <td>Electronics</td>
+        <td>$800</td>
+      </tr>
+
+      <tr>
+        <td>Bookshelf</td>
+        <td>Furniture</td>
+        <td>$150</td>
+      </tr>
+
+      <tr>
+        <td>Coffee Maker</td>
+        <td>Appliances</td>
+        <td>$50</td>
+      </tr>
+    </table>
+  </body>
+</html>
+```
+
+### Styling HTML Tables
+
+You can style an HTML table using CSS properties to give it a custom appearance. You can create classes to apply styles to a table or write internal CSS properties to style the table.
+
+###### Example of Styling an HTML Table:
+
+```html
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <style>
+      table {
+        width: 100%;
+
+        border-collapse: collapse;
+
+        margin-bottom: 20px;
+      }
+
+      th,
+      td {
+        border: 1px solid #ddd;
+
+        padding: 8px;
+
+        text-align: left;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>HTML Table</h2>
+
+    <p>This table is 3x3 cells including the table header.</p>
+
+    <table>
+      <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+        <th>Header 3</th>
+      </tr>
+
+      <tr>
+        <td>Data 1</td>
+        <td>Data 2</td>
+        <td>Data 3</td>
+      </tr>
+
+      <tr>
+        <td>Data 4</td>
+        <td>Data 5</td>
+        <td>Data 6</td>
+      </tr>
+    </table>
+  </body>
+</html>
+```
+
+### Table Background Color and Image
+
+You can set the background color and background image of an HTML table using CSS properties or attributes of the `<table>` tag.
+
+#### Using Attributes
+
+The following attributes can be used with the `<table>` tag to set the background color and/or image:
+
+- `bgcolor`: Sets the table's background color.
+- `background`: Sets a background image.
+
+###### Example Using Attributes:
+
+```html
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>HTML Table Background Color</title>
+  </head>
+
+  <body>
+    <table border="1" bgcolor="yellow" background="image.jpg">
+      <tr>
+        <th>Column 1</th>
+        <th>Column 2</th>
+        <th>Column 3</th>
+      </tr>
+
+      <tr>
+        <td rowspan="2">Row 1 Cell 1</td>
+
+        <td>Row 1 Cell 2</td>
+        <td>Row 1 Cell 3</td>
+      </tr>
+
+      <tr>
+        <td>Row 2 Cell 2</td>
+        <td>Row 2 Cell 3</td>
+      </tr>
+
+      <tr>
+        <td colspan="3">Row 3 Cell 1</td>
+      </tr>
+    </table>
+  </body>
+</html>
+```
+
+#### Using CSS Properties
+
+Using attributes for styling is considered outdated. It is recommended to use CSS for styling HTML tables.
+
+###### Example Using CSS:
+
+```html
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>HTML Table Background Color</title>
+
+    <style>
+      table {
+        background-color: yellow;
+        background-image: url("image.jpg");
+      }
+    </style>
+  </head>
+
+  <body>
+    <table>
+      <tr>
+        <th>Column 1</th>
+        <th>Column 2</th>
+        <th>Column 3</th>
+      </tr>
+
+      <tr>
+        <td rowspan="2">Row 1 Cell 1</td>
+        <td>Row 1 Cell 2</td>
+        <td>Row 1 Cell 3</td>
+      </tr>
+
+      <tr>
+        <td>Row 2 Cell 2</td>
+        <td>Row 2 Cell 3</td>
+      </tr>
+
+      <tr>
+        <td colspan="3">Row 3 Cell 1</td>
+      </tr>
+    </table>
+  </body>
+</html>
+```
+
+### Table Width and Height
+
+The width and height of a table can be set using either attributes or CSS properties. These values can be defined in pixels or percentages.
+
+#### Using Attributes
+
+The following attributes can set the width and height of a table:
+
+- ` width`: Defines the width of the table.
+- `height`: Defines the height of the table.
+
+###### Example Using Attributes:
+
+```html
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>HTML Table Width/Height</title>
+  </head>
+
+  <body>
+    <table border="1" width="80%" height="400">
+      <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+      </tr>
+
+      <tr>
+        <td>Row 1, Column 1</td>
+        <td>Row 1, Column 2</td>
+      </tr>
+
+      <tr>
+        <td>Row 2, Column 1</td>
+        <td>Row 2, Column 2</td>
+      </tr>
+    </table>
+  </body>
+</html>
+```
+
+#### Using CSS
+
+You can also set the width and height of a table using CSS properties:
+
+###### Example Using CSS:
+
+```html
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>HTML Table Width/Height</title>
+
+    <style>
+      table {
+        width: 80%;
+
+        height: 400px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <table border="1">
+      <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+      </tr>
+
+      <tr>
+        <td>Row 1, Column 1</td>
+        <td>Row 1, Column 2</td>
+      </tr>
+
+      <tr>
+        <td>Row 2, Column 1</td>
+        <td>Row 2, Column 2</td>
+      </tr>
+    </table>
+  </body>
+</html>
+```
+
+### HTML Nested Tables
+
+Nested HTML tables refer to creating tables inside a table. You can create tables inside a table by using the `<table>` tag within any `<td>` tag, which creates another table in the main table's cell.
+
+###### Example of Nested Tables:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Nested Tables</title>
+  </head>
+
+  <body>
+    <table border="1">
+      <tr>
+        <td>First Column of Outer Table</td>
+        <td>
+          <table border="1">
+            <tr>
+              <td>First row of Inner Table</td>
+            </tr>
+
+            <tr>
+              <td>Second row of Inner Table</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <table border="1">
+            <tr>
+              <td>First row of Inner Table</td>
+            </tr>
+
+            <tr>
+              <td>Second row of Inner Table</td>
+            </tr>
+          </table>
+        </td>
+        <td>First Column of Outer Table</td>
+      </tr>
+    </table>
+  </body>
+</html>
+```
+
+### Table-related Tags Reference
+
+The following are the table-related tags you can use in HTML:
+
+| Tag          | Description                                                              | Example                 |
+| ------------ | ------------------------------------------------------------------------ | ----------------------- |
+| `<table>`    | Used to create an HTML table.                                            | `<table></table>`       |
+| `<tr>`       | Used to create a table row.                                              | `<tr></tr>`             |
+| `<td>`       | Used to store table data in each cell.                                   | `<td></td>`             |
+| `<th>`       | Defines the header of the table.                                         | `<th></th>`             |
+| `<caption>`  | Specifies the caption for the table.                                     | `<caption></caption>`   |
+| `<colgroup>` | Describes a collection of one or more columns in a table for formatting. | `<colgroup></colgroup>` |
+| `<col>`      | Used to offer information about columns.                                 | `<col></col>`           |
+| `<thead>`    | Defines the table header section.                                        | `<thead></thead>`       |
+| `<tbody>`    | Defines the table body section.                                          | `<tbody></tbody>`       |
+| `<tfoot>`    | Defines the table footer section.                                        | `<tfoot></tfoot>`       |
+
+### Conclusion
+
+Tables are an essential part of web development, providing a structured way to display data and information. By understanding the different tags and attributes available in HTML, you can create tables that are both visually appealing and functional. Whether you're creating a simple table for a blog post or a complex table for a database, HTML tables offer a powerful way to organize and present information in a clear and accessible manner.

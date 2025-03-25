@@ -1,0 +1,304 @@
+---
+title: HTML List
+description: This is the List section of the html Documentation
+sidebar:
+  order: 14
+---
+
+HTML lists are groups or collections of items that can be organized or unorganized depending on the requirement. They help in structuring and presenting information in a user-friendly, readable, and accessible manner. HTML provides several ways to create lists, including ordered lists, unordered lists, and definition lists.
+
+### Types of HTML Lists
+
+- **Unordered Lists:** Used to display items that are not in a specific order. Items in unordered lists are marked with bullet points. The `<ul>` tag is used to create an unordered list, and the `<li>` tag specifies the list items.
+
+- **Ordered Lists:** Used for lists of items that are in a specific order. Ordered lists are marked with numbers by default, but you can change the numbering style using the type attribute or CSS. The `<ol>` tag is used to create an ordered list, and the `<li>` tag specifies the list items.
+
+- **Definition Lists:** Used for lists of items with their corresponding descriptions. The `<dl>` tag specifies the definition list, the `<dt>` tag specifies the definition term, and the `<dd>` tag specifies the definition description.
+
+### Unordered Lists
+
+Unordered lists display items without a specific order, using bullet points to mark each item.
+
+###### Example of an Unordered List:
+
+```html
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>HTML Unordered List</title>
+  </head>
+
+  <body>
+    <h2>Example of HTML Unordered List</h2>
+
+    <ul>
+      <li>HTML</li>
+
+      <li>CSS</li>
+
+      <li>JavaScript</li>
+
+      <li>Java</li>
+
+      <li>JavaFX</li>
+    </ul>
+  </body>
+</html>
+```
+
+### Ordered Lists
+
+Ordered lists display items in a specific sequence, marked with numbers by default. You can customize the numbering style using the type attribute.
+
+###### Example of an Ordered List:
+
+```html
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>HTML Ordered List</title>
+  </head>
+
+  <body>
+    <h2>Example of HTML Ordered List</h2>
+
+    <ol>
+      <li>HTML</li>
+
+      <li>CSS</li>
+
+      <li>JavaScript</li>
+
+      <li>Java</li>
+
+      <li>JavaFX</li>
+    </ol>
+  </body>
+</html>
+```
+
+### Definition Lists
+
+Definition lists are used to present terms and their corresponding descriptions.
+
+###### Example of a Definition List:
+
+```html
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>HTML Definition List</title>
+  </head>
+
+  <body>
+    <h2>Example of HTML Definition List</h2>
+
+    <dl>
+      <dt>HTML</dt>
+
+      <dd>HyperText Markup Language</dd>
+
+      <dt>CSS</dt>
+
+      <dd>Cascading Style Sheets</dd>
+
+      <dt>JS</dt>
+
+      <dd>JavaScript</dd>
+    </dl>
+  </body>
+</html>
+```
+
+### Nested Lists
+
+HTML allows nesting of lists within one another to create complex document structures.
+
+###### Example of a Nested List:
+
+```html
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>HTML Nested List</title>
+  </head>
+
+  <body>
+    <h2>Example of HTML Nested List</h2>
+
+    <ol>
+      <li>Item One</li>
+
+      <li>
+        Item Two
+
+        <ul>
+          <li>Subitem A</li>
+
+          <li>Subitem B</li>
+        </ul>
+      </li>
+
+      <li>Item Three</li>
+    </ol>
+  </body>
+</html>
+```
+
+### Grouping Lists Inside `<div>` Tag
+
+To enhance styling and layout, lists can be wrapped inside `<div> `elements. This grouping aids in applying consistent styles and creating visually appealing list structures.
+
+###### Example of Grouping Lists with `<div>`:
+
+```html
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+   <title>HTML List Grouping</title>
+
+</head>
+
+<body>
+
+   <h2>Grouping of HTML List Elements with `<div>` Tag</h2>
+
+   <div>
+
+      <p>First List</p>
+
+      <ol>
+
+         <li>Item One</li>
+
+         <li>Item Two</li>
+
+      </ol>
+
+   </div>
+
+   <div>
+
+      <p>Second List</p>
+
+      <ol>
+
+         <li>Item Three</li>
+
+         <li>Item Four</li>
+
+      </ol>
+
+   </div>
+
+</body>
+
+</html>
+```
+
+### Styling Lists
+
+Lists can be styled using CSS to enhance their visual presentation. Custom styles can be applied to list items, creating unique and visually appealing designs.
+
+###### Example of Styling Lists with CSS:
+
+```html
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>HTML List with CSS</title>
+
+    <style>
+      li {
+        font-size: 16px;
+      }
+
+      div {
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>HTML List with CSS</h2>
+
+    <div>
+      <p>First List</p>
+
+      <ol>
+        <li>Item One</li>
+
+        <li>Item Two</li>
+      </ol>
+    </div>
+
+    <div>
+      <p>Second List</p>
+
+      <ol>
+        <li>Item Three</li>
+
+        <li>Item Four</li>
+      </ol>
+    </div>
+  </body>
+</html>
+```
+
+### HTML Lists Marker Types
+
+CSS allows customization of marker types for list items using the list-style-type property. You can change markers to circles, squares, or other symbols.
+
+###### Example of Customizing List Markers:
+
+```html
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>HTML List Marker Types</title>
+
+    <style>
+      ul {
+        list-style-type: square; /* Change marker to square */
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>HTML list-style-type Property</h2>
+
+    <div>
+      <p>First List</p>
+
+      <ul>
+        <li>Item One</li>
+        <li>Item Two</li>
+      </ul>
+    </div>
+
+    <div>
+      <p>Second List</p>
+
+      <ul>
+        <li>Item Three</li>
+        <li>Item Four</li>
+      </ul>
+    </div>
+  </body>
+</html>
+```
+
+### Conclusion HTML lists are essential for organizing and presenting
+
+information in a structured manner. By using unordered lists, ordered lists, and
+definition lists, you can effectively convey information to users.
