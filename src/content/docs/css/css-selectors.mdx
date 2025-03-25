@@ -1,0 +1,321 @@
+---
+title: CSS Selectors
+description: This is the Selectors section of the CSS Documentation
+sidebar:
+  order: 6
+---
+
+CSS selectors are patterns used to select and style HTML elements on a web page. They allow developers to apply specific styles to elements based on their type, class, ID, attributes, and more. Understanding CSS selectors is essential for effective web design and development.
+
+### Types of CSS Selectors
+
+#### Universal Selector
+
+- **Description:** Selects all elements on the page.
+- **Syntax:**
+
+```css
+* {
+  property: value;
+}
+```
+
+###### Example:
+
+```css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+```
+
+#### Type Selector (Element Selector)
+
+- **Description:** Selects all instances of a specific HTML element.
+- **Syntax:**
+
+```css
+element {
+  property: value;
+}
+```
+
+###### Example:
+
+```css
+h1 {
+  color: blue;
+}
+```
+
+#### Class Selector
+
+- **Description:** Selects elements with a specific class attribute. Class selectors are prefixed with a dot (.).
+- **Syntax:**
+
+```css
+.className {
+  property: value;
+}
+```
+
+###### Example:
+
+```css
+.highlight {
+  background-color: yellow;
+}
+```
+
+#### ID Selector
+
+- **Description:** Selects a single element with a specific ID attribute. ID selectors are prefixed with a hash (#).
+- **Syntax:**
+
+````css
+#idName {
+  property: value;
+}
+
+######Example: ```css #header {
+  font-size: 24px;
+}
+````
+
+#### Attribute Selector
+
+- **Description:** Selects elements based on the presence or value of a specific attribute.
+- **Syntax:**
+
+```css
+[attribute] {
+  property: value;
+}
+```
+
+###### Example:
+
+```css
+a[target="_blank"] {
+  color: red;
+}
+```
+
+#### Descendant Selector
+
+- **Description:** Selects elements that are descendants of a specified element.
+- **Syntax:**
+
+```css
+parent child {
+  property: value;
+}
+```
+
+###### Example:
+
+```css
+div p {
+  color: green;
+}
+```
+
+#### Child Selector
+
+- **Description:** Selects elements that are direct children of a specified element.
+- **Syntax:**
+
+```css
+parent > child {
+  property: value;
+}
+```
+
+###### Example:
+
+```css
+ul > li {
+  list-style-type: none;
+}
+```
+
+#### Adjacent Sibling Selector
+
+- **Description:** Selects an element that is immediately preceded by a specified element.
+- **Syntax:**
+
+```css
+element1 + element2 {
+  property: value;
+}
+```
+
+###### Example:
+
+```css
+h1 + p {
+  margin-top: 0;
+}
+```
+
+#### General Sibling Selector
+
+- **Description:** Selects all siblings of a specified element.
+- **Syntax:**
+
+```css
+element1 ~ element2 {
+  property: value;
+}
+```
+
+###### Example:
+
+```css
+h1 ~ p {
+  color: gray;
+}
+```
+
+#### Pseudo-Classes
+
+- **Description:** Selects elements based on their state or position.
+- **Syntax:**
+
+```css
+element:pseudo-class {
+  property: value;
+}
+```
+
+###### Example:
+
+```css
+a:hover {
+  text-decoration: underline;
+}
+```
+
+#### Pseudo-Elements
+
+- **Description:** Selects a specific part of an element.
+- **Syntax:**
+
+```css
+element::pseudo-element {
+  property: value;
+}
+```
+
+###### Example:
+
+```css
+p::first-line {
+  font-weight: bold;
+}
+```
+
+### Example of CSS Selectors in Action
+
+Here’s a complete example demonstrating various CSS selectors:
+
+```html
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>CSS Selectors Example</title>
+
+    <style>
+      /* Universal Selector */
+
+      * {
+        box-sizing: border-box;
+      }
+
+      /* Type Selector */
+
+      h1 {
+        color: blue;
+      }
+
+      /* Class Selector */
+
+      .highlight {
+        background-color: yellow;
+      }
+
+      /* ID Selector */
+
+      #main {
+        padding: 20px;
+
+        border: 1px solid black;
+      }
+
+      /* Attribute Selector */
+
+      a[target="_blank"] {
+        color: red;
+      }
+
+      /* Descendant Selector */
+
+      div p {
+        color: green;
+      }
+
+      /* Child Selector */
+
+      ul > li {
+        list-style-type: none;
+      }
+
+      /* Adjacent Sibling Selector */
+
+      h1 + p {
+        margin-top: 0;
+      }
+
+      /* General Sibling Selector */
+
+      h1 ~ p {
+        color: gray;
+      }
+
+      /* Pseudo-Class */
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      /* Pseudo-Element */
+
+      p::first-line {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 id="main">CSS Selectors Example</h1>
+    <p class="highlight">This is a highlighted paragraph.</p>
+    <p>This is a normal paragraph.</p>
+    <a href="#" target="_blank">This is a link that opens in a new tab.</a>
+
+    <div>
+      <p>This is a paragraph inside a div.</p>
+    </div>
+
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+    </ul>
+  </body>
+</html>
+```
+
+### Conclusion
+
+CSS selectors are fundamental to styling web pages effectively. By understanding the different types of selectors, you can target specific elements and apply styles that enhance the user experience. Mastering CSS selectors will enable you to create more complex and visually appealing designs, making your web development skills more robust and effective.

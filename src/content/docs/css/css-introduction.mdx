@@ -1,0 +1,118 @@
+---
+title: CSS Introduction
+description: This is the Introduction section of the CSS Documentation
+sidebar:
+  order: 2
+---
+
+### What is CSS?
+
+CSS, which stands for Cascading Style Sheets, is a style sheet language used to describe the presentation and design of web pages. It allows developers to control the layout, colors, fonts, spacing, and overall visual appearance of HTML elements. By separating content (HTML) from presentation (CSS), developers can create visually appealing and well-structured web pages.
+
+### Key Features of CSS
+
+- **Control Over Presentation:** CSS enables you to control various aspects of a webpage, including:
+
+- Text color
+- Font styles
+- Spacing between paragraphs
+- Layout of columns
+- Background images and colors
+
+- **Global Styling:** CSS can control the layout and styling of multiple web pages simultaneously, making it easier to maintain a consistent look across a website.
+
+### CSS Styling Example
+
+To illustrate the impact of CSS, consider a simple webpage layout. By clicking a button, you can toggle between a styled version and an unstyled version of the page, demonstrating the difference that CSS can make.
+
+###### Webpage Layout Example:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Webpage Layout</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      .sidebar {
+        width: 200px;
+        float: left;
+        background-color: #f4f4f4;
+        padding: 10px;
+      }
+
+      .content {
+        margin-left: 220px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="sidebar">
+      <h2>Sidebar</h2>
+
+      <p>Sidebar content here.</p>
+    </div>
+
+    <div class="content">
+      <h1>Welcome to the Webpage</h1>
+      <p>This is the main content area.</p>
+      <button onclick="toggleStyle()">Click to Add Style</button>
+    </div>
+
+    <footer>
+      <p>© 2024 Webpage Layout. All rights reserved.</p>
+    </footer>
+
+    <script>
+      function toggleStyle() {
+        // JavaScript function to toggle styles
+      }
+    </script>
+  </body>
+</html>
+```
+
+### Why Use CSS?
+
+- **Saves Time:** Write CSS once and reuse the same stylesheet across multiple HTML pages, reducing redundancy.
+
+- **Faster Page Load:** By using CSS, you avoid repeating HTML tags or attributes. A single CSS rule can apply to all occurrences of a tag.
+
+- **Easy Maintenance:** To make global changes, simply update the CSS, and all elements across all web pages will be updated automatically.
+
+- **Superior Styles to HTML:** CSS offers a wider array of styling options compared to HTML, allowing for more visually appealing designs.
+
+- **Multiple Device Compatibility:** CSS enables the creation of different styles for various screen sizes, ensuring a consistent user experience across devices.
+
+- **Global Web Standards:** Many HTML attributes are being deprecated in favor of CSS, which is now the recommended approach for styling.
+
+### CSS Syntax
+
+The syntax of CSS consists of selectors and declarations used to apply styles to HTML elements:
+
+```css
+selector {
+  property: value;
+}
+```
+
+- **Selector:** Targets the HTML element(s) you want to style.
+- **Declaration Block:** Contains one or more declarations enclosed in curly braces {}.
+- **Declarations:** Each declaration consists of a property and a value, separated by a colon :. Declarations are separated by semicolons ;.
+
+### Common CSS Selectors
+
+CSS provides several types of selectors, including:
+
+- **Class Selectors:** Target elements with a specific class.
+- **ID Selectors:** Target elements with a specific ID.
+- **Tag Selectors:** Target elements by their HTML tag name.
+
+### Conclusion
+
+CSS is an essential tool for web developers and designers, providing the means to create visually appealing and responsive web pages. Understanding CSS syntax, selectors, and its history will help you leverage its full potential in your web projects. By mastering CSS, you can enhance the user experience and maintain a consistent design across your website. Whether you are a beginner or an experienced developer, CSS is a fundamental skill that will greatly benefit your web development journey.

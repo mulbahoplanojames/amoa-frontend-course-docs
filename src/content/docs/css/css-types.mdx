@@ -1,0 +1,136 @@
+---
+title: CSS Types
+description: This is the Types section of the CSS Documentation
+sidebar:
+  order: 4
+---
+
+CSS stands for Cascading Style Sheets. It is a stylesheet language used to control the layout and other visual aspects of web pages. CSS plays a crucial role in modern web development by providing the tools necessary to create visually appealing, accessible, and responsive websites.
+
+### Types of CSS
+
+There are three main types of CSS:
+
+- Inline CSS
+- Internal CSS
+- External CSS
+
+### Inline CSS
+
+Inline CSS is applied directly to an HTML element using the style attribute. It has the highest priority among the three methods, meaning that if there are conflicting styles, inline styles will take precedence.
+
+###### Example 1: Changing Text Color and Font
+
+In this example, we change the text color and font of a paragraph using inline CSS properties:
+
+```html
+<p style="color: #04af2f; font-family: Verdana, sans-serif;">
+  This line is an inline-styled paragraph.
+</p>
+```
+
+###### Example 2: Styling a Div Element
+
+In this example, we change the background color, height, width, and text color of a div element using inline CSS properties:
+
+```html
+<div
+  style="background-color: #04af2f; color: white; height: 100px; width: 250px;"
+>
+  This line is an inline-styled div.
+</div>
+```
+
+### Internal CSS
+
+Internal CSS is defined within the `<style>` tag inside the `<head>` section of an HTML document. This method is useful for styling a single document without affecting other pages.
+
+###### Example 1: Changing Text Color and Font
+
+In this example, we change the text color and font of a paragraph using internal CSS properties:
+
+````html
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <style>
+      p {
+        color: #04af2f;
+        font-family: Verdana, sans-serif;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p>This line is styled using internal CSS.</p>
+  </body>
+</html>
+``` ###### Example 2: Styling a Paragraph with Background Color In this example,
+we change the background color, height, width, and text color of a paragraph
+using internal CSS properties: ```html
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <style>
+      p {
+        background-color: #04af2f;
+        color: white;
+        height: 100px;
+        width: 250px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p>This line is styled using internal CSS.</p>
+  </body>
+</html>
+````
+
+### External CSS
+
+External CSS is written in a separate .css file and linked to the HTML document using the `<link>` tag. This is the recommended method for large projects as it improves maintainability and allows for consistent styling across multiple pages.
+
+###### Example: Using External CSS
+
+Here’s an example demonstrating how to use external CSS with separate files for HTML and CSS.
+
+```html
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <p>This line is styled using external CSS.</p>
+  </body>
+</html>
+```
+
+CSS File (styles.css):
+
+```css
+p {
+  color: #04af2f;
+  font-family: Verdana, sans-serif;
+}
+```
+
+### Specificity Order
+
+The specificity order for the three types of CSS is as follows:
+
+- Inline CSS: Highest priority
+- Internal CSS: Medium priority
+- External CSS: Lowest priority
+
+This means that if there are conflicting styles applied to the same element, the inline styles will take precedence over internal and external styles.
+
+### Conclusion
+
+CSS is an essential tool for web development, allowing developers to create visually appealing and well-structured web pages. Understanding the different types of CSS—inline, internal, and external—enables you to choose the best method for styling your web projects. By mastering CSS, you can enhance the user experience and maintain a consistent design across your website.

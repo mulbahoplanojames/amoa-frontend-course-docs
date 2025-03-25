@@ -1,0 +1,305 @@
+---
+title: CSS Syntax
+description: This is the Syntax section of the css Documentation
+sidebar:
+  order: 3
+  parent: css-introduction
+---
+
+CSS stands for Cascading Style Sheets. It is a popular stylesheet language used to design interactive web pages. CSS allows developers to define the presentation of HTML elements in a separate file with a .css extension, enabling a clear separation of content and design.
+
+### CSS Syntax
+
+The syntax of CSS consists of selectors and declarations used to apply styles to HTML elements. The basic structure is as follows:
+
+```css
+selector {
+  property: value;
+}
+```
+
+- **Selector:** CSS selectors are used to select the HTML element or groups of elements you want to style on a web page.
+- **Property:** A CSS property is an aspect or characteristic of an HTML element that can be styled or modified using CSS, such as color, font-size, or margin.
+- **Value:** Values are assigned to properties. For example, the color property can have values like red, green, etc.
+
+###### Example of CSS Syntax
+
+Here’s an example demonstrating the CSS syntax:
+
+```css
+p {
+  background-color: black;
+  color: white;
+  padding: 5px;
+}
+```
+
+### Multiple Style Rules
+
+If you want to define multiple rules for a single selector, you can specify those in a single block, separated by semicolons (;).
+
+```css
+selector {
+  property1: value1;
+  property2: value2;
+  property3: value3;
+}
+```
+
+###### Example of Styling Using CSS
+
+Here’s a complete example of a simple HTML document styled with CSS:
+
+```html
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <style>
+      /* Style all the paragraphs */
+
+      p {
+        background-color: black;
+        color: white;
+        padding: 5px;
+      }
+
+      /* Style all elements with class 'special' */
+
+      .special {
+        color: lightblue; /* Change text color */
+      }
+    </style>
+  </head>
+  <body>
+    <p>This is a normal paragraph...</p>
+    <br />
+    <p class="special">This is a paragraph with class special...</p>
+    <br />
+    <div class="special">This is a div with class special...</div>
+  </body>
+</html>
+```
+
+### CSS Selectors Syntax
+
+CSS selectors are used to select the HTML elements you want to style on a web page. They allow you to target specific elements or groups of elements to apply styles like colors, fonts, margins, and more. Here are some common types of selectors:
+
+#### Universal Selector
+
+The universal selector selects and applies styles to all elements in an HTML document.
+
+```css
+* {
+  font-family: Verdana, sans-serif;
+  color: green;
+}
+```
+
+#### Element Selectors
+
+Element selectors select specific HTML elements.
+
+```css
+h1 {
+  color: #04af2f;
+}
+```
+
+### Class Selectors
+
+Class selectors select and style elements with a specific value for their class attribute.
+
+```css
+.myDiv {
+  color: #04af2f;
+}
+```
+
+#### ID Selectors
+
+ID selectors select a single element with a particular value for the id attribute.
+
+```css
+#myDiv {
+  color: #04af2f;
+}
+```
+
+#### Attribute Selectors
+
+Attribute selectors select elements based on a specific attribute value.
+
+```css
+a[target] {
+  background-color: peachpuff;
+}
+```
+
+### Example of CSS Selectors
+
+Here’s an example demonstrating various types of selectors:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS Selector Example</title>
+
+    <style>
+      * {
+        background-color: #04af2f;
+        color: white;
+      }
+
+      h3 {
+        text-align: center;
+      }
+
+      #myDiv {
+        height: 200px;
+        width: 200px;
+        background-color: antiquewhite;
+        color: black;
+      }
+
+      .para {
+        border: 1px solid black;
+      }
+
+      a[href] {
+        font-size: 2em;
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h3>CSS Selectors Example</h3>
+
+    <div id="myDiv">This is a div element.</div>
+
+    <p class="para">This is a paragraph element.</p>
+
+    <a href="/css/css_padding.htm" target="_blank">This is a Link</a>
+  </body>
+</html>
+```
+
+### CSS Grouping Selector Syntax
+
+Grouping selectors allow you to apply the same style to multiple elements at once. Grouping selectors are comma-separated.
+
+```css
+div,
+p {
+  background-color: #04af2f;
+  color: white;
+}
+```
+
+### CSS Nesting Syntax
+
+Nesting allows you to nest one specific style rule within another.
+
+```css
+div p {
+  background-color: #04af2f;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+```
+
+### CSS Pseudo-Classes & Pseudo-Elements Syntax
+
+CSS pseudo-elements style specific parts of an element.
+
+```css
+p:before {
+  content: "NOTE:";
+  font-weight: bold;
+}
+```
+
+CSS Pseudo-Class Syntax
+
+CSS pseudo-classes are used to select and style elements based on their state.
+
+```css
+a:hover {
+  color: red;
+}
+```
+
+### CSS Inclusion Syntax
+
+CSS can be included in any HTML document using three different methods: inline CSS, internal CSS, and external CSS.
+
+#### Inline CSS Syntax
+
+Inline CSS is used directly within HTML tags.
+
+```html
+<div style="color: #04af2f;">Welcome to TutorialsPoint.</div>
+```
+
+#### Internal CSS Syntax
+
+Internal CSS is used within the `<head>` section of an HTML document using a `<style>` tag.
+
+```html
+<head>
+  <style>
+    body {
+      background-color: #04af2f;
+    }
+  </style>
+</head>
+```
+
+#### External CSS Syntax
+
+External CSS is written in a separate file with a .css extension and linked to the HTML document using the `<link>` tag.
+
+```html
+<link rel="stylesheet" type="text/css" href="style.css" />
+```
+
+### CSS Media Queries Syntax
+
+CSS media queries apply different styles based on screen size, resolution, and other characteristics, often used for creating responsive designs.
+
+```css
+@media (max-width: 700px) {
+  body {
+    background-color: #04af2f;
+  }
+}
+```
+
+### CSS Variables Syntax
+
+CSS variables allow you to store and reuse values throughout your CSS.
+
+```css
+:root {
+  --main-color: #04af2f;
+}
+```
+
+### CSS Comments Syntax
+
+CSS comments add explanatory notes about the code.
+
+```css
+/* This is a single line CSS comment */
+
+/* This is
+a multi-line
+CSS comment */
+```
+
+### Conclusion
+
+CSS is a powerful tool for web design, allowing developers to create visually appealing and responsive web pages. Understanding CSS syntax, selectors, and inclusion methods is essential for effective web development. By mastering CSS, you can enhance the user experience and maintain a consistent design across your website. Whether you are a beginner or an experienced developer, CSS is a fundamental skill that will greatly benefit your web design projects.
