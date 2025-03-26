@@ -1,0 +1,186 @@
+---
+title: CSS Background
+description: Learn how to use CSS background properties to add background to your web pages.
+sidebar:
+  order: 8
+---
+
+In CSS, the background properties are used to define the background of an element. This includes setting background colors, images, gradients, and more. Understanding how to effectively use background properties is essential for creating visually appealing web designs.
+
+### Background Properties
+
+Here are the main CSS properties used to control backgrounds:
+
+- **background-color**
+  - Description: Sets the background color of an element.
+  - Syntax:
+
+```css
+element {
+  background-color: color;
+}
+
+// Example:
+
+div {
+  background-color: #ff5733; /* Sets a solid background color */
+}
+```
+
+- **background-image**
+  - Description: Sets an image as the background of an element.
+  - Syntax:
+
+```css
+element {
+  background-image: url("image.jpg");
+}
+
+// Example:
+
+body {
+  background-image: url("background.jpg"); /* Sets a background image */
+}
+```
+
+- **background-repeat**
+  - Description: Defines how the background image is repeated. Possible values include repeat, no-repeat, repeat-x, and repeat-y.
+  - Syntax:
+
+```css
+element {
+  background-repeat: value;
+}
+
+// Example:
+
+div {
+  background-image: url("pattern.png");
+  background-repeat: repeat; /* Repeats the image both horizontally and vertically */
+}
+```
+
+- **background-position**
+  - Description: Sets the starting position of a background image. Values can be specified in pixels, percentages, or keywords (e.g., top, bottom, left, right, center).
+  - Syntax:
+
+```css
+element {
+  background-position: position;
+}
+
+// Example:
+
+div {
+  background-image: url("image.jpg");
+  background-position: center; /* Centers the background image */
+}
+```
+
+- **background-size**
+  - Description: Specifies the size of the background image. Common values include cover, contain, or specific dimensions (e.g., 100px 100px).
+  - Syntax:
+
+```css
+element {
+  background-size: size;
+}
+
+// Example:
+
+div {
+  background-image: url("image.jpg");
+  background-size: cover; /* Scales the image to cover the entire element */
+}
+```
+
+- **background-attachment**
+  - Description: Determines whether the background image scrolls with the page or is fixed in place. Possible values are scroll, fixed, and local.
+  - Syntax:
+
+```css
+element {
+  background-attachment: value;
+}
+
+// Example:
+
+body {
+  background-image: url("image.jpg");
+  background-attachment: fixed; /* The background image is fixed in place */
+}
+```
+
+### Example of Using Background Properties
+
+Here’s a complete example demonstrating various background properties in CSS:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS Background Example</title>
+
+    <style>
+      body {
+        background-color: #f0f0f0; /* Light gray background */
+        background-image: url("background.jpg"); /* Background image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Cover the entire viewport */
+      }
+
+      .container {
+        background-color: rgba(
+          255,
+          87,
+          51,
+          0.8
+        ); /* Semi-transparent background color */
+        padding: 20px;
+        border-radius: 10px;
+        margin: 20px;
+      }
+
+      .fixed-background {
+        background-image: url("fixed-background.jpg");
+        background-attachment: fixed; /* Fixed background */
+        height: 300px;
+        color: white;
+        text-align: center;
+        padding: 50px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Welcome to CSS Backgrounds</h1>
+
+      <p>This container has a semi-transparent background color.</p>
+    </div>
+
+    <div class="fixed-background">
+      <h2>Fixed Background Example</h2>
+
+      <p>The background image stays fixed while scrolling.</p>
+    </div>
+  </body>
+</html>
+```
+
+### Summary of Background Properties
+
+| Property              | Description                                                                         | Example Value                         |
+| --------------------- | ----------------------------------------------------------------------------------- | ------------------------------------- |
+| background-color      | Sets the background color of an element.                                            | #ff5733, rgba(255, 87, 51, 0.5)       |
+| background-image      | Sets an image as the background of an element.                                      | url('image.jpg')                      |
+| background-repeat     | Defines how the background image is repeated.                                       | repeat, no-repeat, repeat-x, repeat-y |
+| background-position   | Sets the starting position of a background image.                                   | center, top left, 50% 50%             |
+| background-size       | Specifies the size of the background image.                                         | cover, contain, 100px 100px           |
+| background-attachment | Determines whether the background image scrolls with the page or is fixed in place. | scroll, fixed, local                  |
+
+### Conclusion
+
+CSS background properties are essential for enhancing the visual appeal of web pages. By understanding how to use properties like background-color, background-image, background-repeat, background-position, background-size, and background-attachment, you can create engaging and dynamic designs.
+
+Using a combination of these properties allows for creative backgrounds that can improve user experience and make your web pages more attractive. Whether you are using solid colors, images, or gradients, mastering CSS backgrounds will significantly enhance your web design skills.

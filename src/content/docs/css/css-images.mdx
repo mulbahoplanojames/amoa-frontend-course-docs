@@ -1,0 +1,171 @@
+---
+title: CSS Images
+description: Learn how to use CSS images to add images to your web pages.
+sidebar:
+  order: 11
+---
+
+CSS images are used to enhance the visual appeal of web pages by allowing developers to incorporate images as backgrounds, inline elements, or decorative features. Understanding how to effectively use images in CSS is essential for creating engaging and visually appealing designs.
+
+### Key CSS Properties for Images
+
+Here are the main CSS properties used to control images:
+
+- **background-image**
+  - Description: Sets an image as the background of an element.
+  - Syntax:
+
+```css
+element {
+  background-image: url("image.jpg");
+}
+
+// Example:
+
+body {
+  background-image: url("background.jpg"); /* Sets a background image */
+}
+```
+
+- **background-size**
+  - Description: Specifies the size of the background image. Common values include cover, contain, or specific dimensions (e.g., 100px 100px).
+  - Syntax:
+
+```css
+element {
+  background-size: size;
+}
+
+div {
+  background-image: url("image.jpg");
+  background-size: cover; /* Scales the image to cover the entire element */
+}
+```
+
+- **background-repeat**
+  - Description: Defines how the background image is repeated. Possible values include repeat, no-repeat, repeat-x, and repeat-y.
+  - Syntax:
+
+```css
+element {
+  background-repeat: value;
+}
+
+// Example:
+
+div {
+  background-image: url("pattern.png");
+  background-repeat: repeat; /* Repeats the image both horizontally and vertically */
+}
+```
+
+- **background-position**
+  - Description: Sets the starting position of a background image. Values can be specified in pixels, percentages, or keywords (e.g., top, bottom, left, right, center).
+  - Syntax:
+
+```css
+element {
+  background-position: position;
+}
+
+// Example:
+
+div {
+  background-image: url("image.jpg");
+  background-position: center; /* Centers the background image */
+}
+```
+
+- **opacity**
+  - Description: Sets the transparency level of an image or element. Values range from 0 (completely transparent) to 1 (completely opaque).
+  - Syntax:
+
+```css
+element {
+  opacity: value;
+}
+
+// Example:
+
+img {
+  opacity: 0.5; /* 50% transparent */
+}
+```
+
+- **filter**
+  - Description: Applies graphical effects like blur, brightness, contrast, and grayscale to images.
+  - Syntax:
+
+```css
+element {
+  filter: effect;
+}
+
+// Example:
+
+img {
+  filter: grayscale(100%); /* Converts the image to grayscale */
+}
+```
+
+### Example of Using CSS Images
+
+Here’s a complete example demonstrating various CSS properties for images:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS Images Example</title>
+
+    <style>
+      body {
+        background-color: #f0f0f0; /* Light gray background */
+        font-family: Arial, sans-serif;
+      }
+
+      .background-image {
+        background-image: url("background.jpg");
+        background-size: cover; /* Cover the entire element */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        height: 300px;
+        color: white;
+        text-align: center;
+        padding: 50px;
+      }
+
+      img {
+        width: 100%; /* Responsive image */
+        height: auto; /* Maintain aspect ratio */
+        opacity: 0.8; /* Slightly transparent */
+        filter: grayscale(50%); /* 50% grayscale */
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="background-image">
+      <h1>Welcome to CSS Images</h1>
+    </div>
+
+    <img src="example.jpg" alt="Example Image" />
+  </body>
+</html>
+```
+
+### CSS Image Properties Summary Table
+
+| Property            | Description                                                  | Example Value                         |
+| ------------------- | ------------------------------------------------------------ | ------------------------------------- |
+| background-image    | Sets an image as the background of an element.               | url('image.jpg')                      |
+| background-size     | Specifies the size of the background image.                  | cover, contain, 100px 100px           |
+| background-repeat   | Defines how the background image is repeated.                | repeat, no-repeat, repeat-x, repeat-y |
+| background-position | Sets the starting position of a background image.            | center, top left, 50% 50%             |
+| opacity             | Sets the transparency level of an image or element.          | 0.5, 1                                |
+| filter              | Applies graphical effects to images (e.g., blur, grayscale). | blur(5px), grayscale(100%)            |
+
+### Conclusion
+
+Understanding how to use images in CSS is essential for creating visually appealing web designs. By mastering properties like background-image, background-size, background-repeat, background-position, opacity, and filter, you can effectively incorporate images into your web pages.
+
+Using images wisely can enhance user experience, convey information, and create a more engaging interface. Whether you are using images as backgrounds, inline elements, or decorative features, proper styling will significantly improve the overall aesthetic of your website.

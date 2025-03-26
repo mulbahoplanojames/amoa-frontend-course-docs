@@ -1,0 +1,163 @@
+---
+title: CSS Fonts
+description: Learn how to use CSS fonts to add font to your web pages.
+sidebar:
+  order: 9
+---
+
+CSS fonts are essential for controlling the typography of text on a web page. This includes specifying font families, sizes, weights, styles, and other text-related properties. Proper use of fonts can greatly enhance the readability and aesthetic appeal of your website.
+
+### Key CSS Font Properties
+
+Here are the main CSS properties used to control fonts:
+
+- **font-family**
+  - Description: Specifies the font for an element. You can list multiple fonts as fallbacks.
+  - Syntax:
+
+```css
+element {
+  font-family: "Font Name", fallback-font, sans-serif;
+}
+
+// Example:
+
+h1 {
+  font-family: "Arial", "Helvetica", sans-serif;
+}
+```
+
+- **font-size**
+  - Description: Sets the size of the font. You can use absolute units (like px, pt) or relative units (like em, rem).
+  - Syntax:
+
+```css
+element {
+  font-size: size;
+}
+
+// Example:
+
+p {
+  font-size: 16px; /* 16 pixels */
+}
+```
+
+- **font-weight**
+  - Description: Defines the thickness of the font. Common values include normal, bold, bolder, lighter, or numeric values (100 to 900).
+  - Syntax:
+
+```css
+element {
+  font-weight: weight;
+}
+
+// Example:
+
+strong {
+  font-weight: bold; /* Bold text */
+}
+```
+
+- **font-style**
+  - Description: Specifies the style of the font, such as normal, italic, or oblique.
+  - Syntax:
+
+```css
+element {
+  font-style: style;
+}
+
+// Example:
+
+em {
+  font-style: italic; /* Italic text */
+}
+```
+
+- **line-height**
+  - Description: Sets the amount of space above and below inline elements. It can be specified in units or as a number.
+  - Syntax:
+
+```css
+element {
+  line-height: value;
+}
+
+// Example:
+
+p {
+  line-height: 1.5; /* 1.5 times the font size */
+}
+```
+
+- **font-variant**
+  - Description: Controls the use of small-caps font.
+  - Syntax:
+
+```css
+element {
+  font-variant: variant;
+}
+
+// Example:
+
+h2 {
+  font-variant: small-caps; /* Small-caps font */
+}
+```
+
+### Example of Using CSS Fonts
+
+Here’s a complete example demonstrating various CSS font properties:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS Fonts Example</title>
+
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+
+      h1 {
+        font-family: "Georgia", serif;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 1.2;
+      }
+
+      p {
+        font-style: italic;
+        color: #333;
+        font-variant: small-caps; /* Small-caps font */
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Welcome to CSS Fonts</h1>
+
+    <p>This is a paragraph demonstrating the use of CSS fonts.</p>
+  </body>
+</html>
+```
+
+### CSS Font Properties Summary Table
+
+| Property     | Description                                                | Example Value                    |
+| ------------ | ---------------------------------------------------------- | -------------------------------- |
+| font-family  | Specifies the font for an element.                         | 'Arial', 'Helvetica', sans-serif |
+| font-size    | Sets the size of the font.                                 | 16px, 1.5em, 2rem                |
+| font-weight  | Defines the thickness of the font.                         | normal, bold, 700                |
+| font-style   | Specifies the style of the font (normal, italic, oblique). | normal, italic                   |
+| line-height  | Sets the amount of space above and below inline elements.  | 1.5, 20px                        |
+| font-variant | Controls the use of small-caps font.                       | small-caps                       |
+
+### Conclusion
+
+Mastering CSS font properties is essential for creating visually appealing and readable web pages. By understanding how to use properties like font-family, font-size, font-weight, font-style, line-height, and font-variant, you can effectively control the typography of your website. Proper typography enhances user experience and contributes to the overall design aesthetic, making it a crucial aspect of web development.

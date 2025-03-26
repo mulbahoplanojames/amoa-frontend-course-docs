@@ -1,0 +1,199 @@
+---
+title: CSS Text
+description: Learn how to use CSS text properties to add text to your web pages.
+sidebar:
+  order: 10
+---
+
+CSS text properties are used to control the appearance of text content on a web page. This includes text alignment, decoration, transformation, spacing, and more. Proper use of text properties can enhance readability and improve the overall design of your website.
+
+### Key CSS Text Properties
+
+Here are the main CSS properties used to control text:
+
+- **text-align**
+  - Description: Specifies the horizontal alignment of text within an element. Common values include left, right, center, and justify.
+  - Syntax:
+
+```css
+element {
+  text-align: alignment;
+}
+
+//Example:
+
+h1 {
+  text-align: center; /* Centered text */
+}
+```
+
+- **text-decoration**
+  - Description: Adds decoration to text, such as underline, overline, or line-through. You can also remove decorations.
+  - Syntax:
+
+```css
+element {
+  text-decoration: decoration;
+}
+
+// Example:
+
+a {
+  text-decoration: none; /* No underline */
+}
+```
+
+- **text-transform**
+  - Description: Controls the capitalization of text. Common values include uppercase, lowercase, and capitalize.
+  - Syntax:
+
+```css
+element {
+  text-transform: transformation;
+}
+
+// Example:
+
+h2 {
+  text-transform: uppercase; /* All uppercase letters */
+}
+```
+
+- **letter-spacing**
+  - Description: Sets the space between characters in text. Positive values increase spacing, while negative values decrease it.
+  - Syntax:
+
+```css
+element {
+  letter-spacing: spacing;
+}
+
+//Example:
+
+p {
+  letter-spacing: 1px; /* 1 pixel space between letters */
+}
+```
+
+- **word-spacing**
+  - Description: Sets the space between words in text. Similar to letter-spacing, positive values increase spacing.
+  - Syntax:
+
+```css
+element {
+  word-spacing: spacing;
+}
+
+// Example:
+
+p {
+  word-spacing: 2px; /* 2 pixels space between words */
+}
+```
+
+- **line-height**
+  - Description: Sets the amount of space above and below inline elements. It can be specified in units or as a number.
+  - Syntax:
+
+```css
+element {
+  line-height: value;
+}
+
+//Example:
+
+p {
+  line-height: 1.5; /* 1.5 times the font size */
+}
+```
+
+- **text-indent**
+  - Description: Indents the first line of text in a block element.
+  - Syntax:
+
+```css
+element {
+  text-indent: indent;
+}
+
+// Example:
+
+p {
+  text-indent: 20px; /* Indent the first line by 20 pixels */
+}
+```
+
+- **text-shadow**
+  - Description: Applies shadow effects to text. You can specify the horizontal and vertical offsets, blur radius, and color.
+  - Syntax:
+
+```css
+element {
+  text-shadow: h-shadow v-shadow blur color;
+}
+
+// Example:
+
+h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+```
+
+### Example of Using CSS Text
+
+Here’s a complete example demonstrating various CSS text properties:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS Text Example</title>
+
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+      }
+
+      h1 {
+        text-align: center;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      p {
+        text-decoration: underline;
+        letter-spacing: 0.5px;
+        word-spacing: 2px;
+        line-height: 1.5;
+        text-indent: 20px; /* Indent the first line */
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>CSS Text Properties</h1>
+
+    <p>
+      This paragraph demonstrates various CSS text properties, including text
+      alignment, decoration, and spacing.
+    </p>
+  </body>
+</html>
+```
+
+### CSS Text Properties Summary Table
+
+| Property        | Description                                                  | Example Value                    |
+| --------------- | ------------------------------------------------------------ | -------------------------------- |
+| text-align      | Specifies the horizontal alignment of text.                  | left, right, center, justify     |
+| text-decoration | Adds decoration to text (underline, overline, line-through). | none, underline, line-through    |
+| text-transform  | Controls the capitalization of text.                         | uppercase, lowercase, capitalize |
+| letter-spacing  | Sets the space between characters in text.                   | 1px, 0.1em                       |
+| word-spacing    | Sets the space between words in text.                        | 2px, 0.2em                       |
+| line-height     | Sets the amount of space above and below inline elements.    | 1.5, 20px                        |
+| text-indent     | Indents the first line of text in a block element.           | 20px, 2em                        |
+| text-shadow     | Applies shadow effects to text.                              | 2px 2px 4px rgba(0, 0, 0, 0.5)   |
+
+### Conclusion
+
+Mastering CSS text properties is essential for creating visually appealing and readable web pages. By understanding how to use properties like text-align, text-decoration, text-transform, letter-spacing, word-spacing, line-height, text-indent, and text-shadow, you can effectively control the appearance of text on your website. Proper text styling enhances user experience and contributes to the overall design aesthetic, making it a crucial aspect of web development.
