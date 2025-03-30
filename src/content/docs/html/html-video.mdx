@@ -1,0 +1,84 @@
+---
+title: HTML Videos
+description: This is the Basic Tags section of the html Documentation
+sidebar:
+  order: 17
+---
+The HTML  ``` <video>``` element allows you to add and display videos on your webpage. You can use it to show various types of video content easily.
+
+#### HTML ```  <video> ``` Element
+
+The ``` <video> ``` element lets you play videos on a webpage. It works like the ``` <img> ``` element, where you need to provide the path or URL of the video in the src attribute. HTML supports MP4, WebM, and Ogg video formats. While the ``` <video>``` element can play audio, the ``` <audio> ``` element is better for just sound.
+
+#### Embedding(Placing/adding) Videos in HTML
+
+To add a video to a webpage, you need to use the src attribute in the ``` <video>``` tag to specify the video’s path or URL. Different web browsers support different video formats (MP4, WebM, and Ogg). To ensure your video works for everyone, you can include multiple ``` <source> ``` tags for each format. This way, the browser can choose the best format for playback.
+
+### Syntax
+Here is the syntax to add a video to a webpage using the ```html<video>``` element:
+
+```html
+<video controls>
+    <source src="video.mp4" type="video/mp4">
+    <source src="video.webm" type="video/webm">
+    <source src="video.ogg" type="video/ogg">
+    Your browser does not support the video tag.
+</video
+```
+In this example:
+  * The ```controls``` attribute adds play, pause, and volume controls.
+  * Each ```html <source>``` tag specifies a different video format.
+  * The text inside the ```html <video>``` tag will display if the browser doesn't support the video element.
+  * The type attribute after the ```html <source>``` tag specifies the format of the video file.
+
+#### Customizing Video Display Size
+
+To set the size of the video display area, known as the viewport, you can use the ' ```height```' and '```width```' attributes of the ```html <video>``` element. These attributes specify the height and width of the video in pixels.
+```html
+<video width="450" height="250" controls>
+      <source src="/video/2pac/2pac.mp4" type="video/mp4">
+</video>
+```
+#### HTML Video autoplay and loop Attributes
+
+You can make a video play automatically and loop continuously by using the autoplay and loop attributes in the ``` <video>``` element.
+
+
+```html
+<video width="640" height="360" autoplay loop muted>
+    <source src="video.mp4" type="video/mp4">
+    <source src="video.webm" type="video/webm">
+    <source src="video.ogg" type="video/ogg">
+    Your browser does not support the video tag.
+</video>
+
+```
+
+In this example:
+
+  * ```autoplay``` makes the video start playing automatically when the page loads.
+  * ```loop``` makes the video restart automatically after it finishes.
+  * ```muted``` is included to ensure the video can autoplay in browsers that require it
+
+
+  #### Setting a Video Thumbnail with the Poster Attribute
+
+  You can set a thumbnail image for your video using the poster attribute in the
+  ```<video>``` element. This image will be displayed before the video starts playing. Here’s how to do it:
+
+
+
+  ```html <video width="640" height="360" controls poster="thumbnail.jpg">
+    <source src="video.mp4" type="video/mp4">
+    <source src="video.webm" type="video/webm">
+    <source src="video.ogg" type="video/ogg">
+    Your browser does not support the video tag.
+</video>
+```
+In this example:
+
+  * The poster="thumbnail.jpg" attribute specifies the URL of the image that will be shown as the thumbnail before the video plays.
+
+
+#### Conclusion
+The HTML ```<video>``` element is a powerful tool for adding videos to your webpage. You can easily embed videos in different formats, customize their size, and even set them to autoplay or loop. Additionally, using the poster attribute allows you to display a thumbnail image before the video starts playing. By understanding these features, you can enhance your website with engaging video content that works across various browsers.
