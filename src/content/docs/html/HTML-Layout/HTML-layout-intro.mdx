@@ -1,0 +1,127 @@
+---
+title: HTML Layout
+description: Learn the way to Layout your Webpage
+sidebar:
+  order: 17
+---
+
+![Alt text for the image](https://media.geeksforgeeks.org/wp-content/uploads/layout.png)
+
+HTML layouts specify the arrangement of components on a web page. A well-structured layout is crucial for providing a user-friendly experience on a website.
+It not only enhances the aesthetic appeal but also improves usability, making it easier for users to navigate and find the information they need.
+
+
+##### HTML Elements
+
+ * ```<header>:``` This tag is used for the header section of a webpage. It typically contains the title and introductory content at the top.
+
+ * ```<nav>: Th```is tag represents the navigation section, where you can find links to other pages or sections of the same page, like a menu.
+
+ * ```<section>```: This tag defines a major part of the webpage that contains important content.
+
+ * ```<footer>:``` This tag is for the footer section at the bottom of the webpage. It usually includes copyright information and other important details.
+
+ * ```<article>```: This tag is used for independent content, such as a blog post or news article.
+
+ * ```<aside>: ```This tag is for content that is related to the main content but is separate, like a sidebar.
+
+ * ```<summary>```: This tag provides a caption for the ```<details>``` element.
+
+ * ```<details>```: This tag is used to create a section that can show or hide additional info
+
+
+
+ ####  How to Define an HTML Layout
+An HTML layout is the arrangement of various elements on a webpage using HTML tags. By utilizing semantic tags like ```<header>```, ```<footer>```, ```<nav>```, ```<section>```, and others, we can create a structured and organized layout that enhances both usability and accessibility.
+
+
+
+
+
+ ```html
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Layout</title>
+    <style>
+        /* Header style */
+        .header {
+            background-color: #b3e0f2; /* Light blue background */
+            text-align: center; /* Center the text */
+            padding: 20px; /* Space inside the header */
+            font-size: 2em; /* Large font size */
+            font-weight: bold; /* Bold text */
+        }
+        /* Container for sidebar and content */
+        .container {
+            display: flex; /* Use flexbox for layout */
+        }
+        /* Sidebar style */
+        .sidebar {
+            width: 20%; /* Sidebar takes 20% of the width */
+            background-color: #f4f4f4; /* Light grey background */
+            padding: 20px; /* Space inside the sidebar */
+        }
+        /* Content area style */
+        .content {
+            width: 80%; /* Content takes 80% of the width */
+            background-color: #f9f9f9; /* Slightly darker grey background */
+            padding: 20px; /* Space inside the content area */
+        }
+        /* Footer style */
+        .footer {
+            background-color: #b3e0f2; /* Light blue background */
+            text-align: center; /* Center the text */
+            padding: 10px; /* Space inside the footer */
+            position: fixed; /* Keep footer at the bottom */
+            width: 100%; /* Full width */
+            bottom: 0; /* Position at the bottom */
+        }
+    </style>
+</head>
+<body>
+    <!-- Header section -->
+    <div class="header">
+        Title
+    </div>
+
+    <!-- Main container for sidebar and content -->
+    <div class="container">
+        <!-- Sidebar section -->
+        <div class="sidebar">
+            <a href="#">Home</a><br>
+            <a href="#">Learn HTML</a><br>
+            <a href="#">About Us</a>
+        </div>
+
+        <!-- Content section -->
+        <div class="content">
+            <h1>Home</h1>
+            <p>This is a home page.</p>
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <div class="footer">
+        Footer
+    </div>
+</body>
+</html>
+```
+
+#### Different Techniques to Create HTML Layouts
+There are four main techniques to create and design HTML layouts. You can use these methods to create both simple and multi-column layouts:
+
+###### flexbox Property:
+A modern approach for creating flexible layouts.
+It helps position elements in rows or columns and adjusts their size based on the screen size, making it great for responsive design.
+
+###### CSS Grid Property:
+A powerful tool for creating complex grid-like layouts. It allows you to define rows and columns, making it easy to arrange elements in a structured way.
+
+###### CSS Frameworks:
+
+Frameworks like Bootstrap provide pre-designed components and styles. They help you quickly create responsive and dynamic layouts without starting from scratch.

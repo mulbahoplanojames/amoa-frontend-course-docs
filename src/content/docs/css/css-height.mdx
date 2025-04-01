@@ -1,0 +1,183 @@
+---
+title: CSS Height Property
+description: Learn how to manipulate the tallness of your element
+sidebar:
+  order: 17
+
+---
+
+The CSS height property sets how tall an element is, influencing its layout and position in the document.
+It can be used on block-level elements, inline-block elements, and replaced elements like images, affecting how they appear on the page.
+
+Syntax
+
+```height: auto | length | percentage | min-content | max-content | initial | inherit; ```
+
+The height property in CSS can be set using the following values:
+
+ * auto: The height is determined by the content.
+ * length: A specific height in units like pixels (px) or ems (em).
+ * percentage: A height based on the parent element's height.
+ * min-content: The smallest height needed to fit the content.
+ * max-content: The largest height needed to fit the content.
+ * initial: Sets the height to the default value.
+ * inherit: The height takes the value from the parent element.
+
+
+### Height Property with Auto Value
+To make an element's height depend on its content, we use the auto value. Here’s an example
+
+```html
+
+<!DOCTYPE html>
+<html>
+
+<head>
+   <style>
+      /* Outer container with a fixed height and padding */
+      .outer {
+         background-color: lightgrey; /* Light grey background */
+         height: 200px; /* Fixed height */
+         padding: 10px; /* Space inside the box */
+         box-sizing: border-box; /* Include padding in height */
+      }
+
+      /* Inner box that adjusts its height based on content */
+      .inner {
+         text-align: center; /* Center the text */
+         border: 2px solid; /* Border around the box */
+         background-color: lightblue; /* Light blue background */
+         height: auto; /* Height depends on content */
+      }
+   </style>
+</head>
+
+<body>
+   <h2>CSS Height Property</h2>
+   <h4>Height: auto</h4>
+   <div class="outer">
+      <div class="inner">
+         This box has an auto height. The height changes based on the content.
+      </div>
+   </div>
+</body>
+
+</html>
+```
+
+### Height Property with Length Values
+
+To give an element a fixed height, we use length units like px, em, or rem. If the content is larger than the set height, it will overflow. Here’s an example:
+
+```html
+<head>
+   <style>
+      .outer {
+         background-color: lightgrey;
+         height: 200px;
+         padding: 10px;
+         box-sizing: border-box;
+      }
+
+      .inner {
+         text-align: center;
+         border: 2px solid;
+         background-color: lightblue;
+      }
+
+      .inner1 {
+         height: 40px;
+      }
+
+      .inner2 {
+         height: 90px;
+      }
+   </style>
+</head>
+```
+
+### Height Property with Percentage Values
+
+To set a height for an element using percentage values, we specify a percentage (e.g., 10%, 20%, etc.).
+The height will be relative to the height of its containing block. If the content exceeds this height, overflow will occur. Here’s an example
+
+```html
+
+<head>
+   <style>
+      /* Outer container with a fixed height */
+      .outer {
+         background-color: lightgrey; /* Light grey background */
+         height: 300px; /* Fixed height for the outer container */
+         padding: 10px; /* Space inside the box */
+         box-sizing: border-box; /* Include padding in height */
+      }
+
+      /* Inner box with a height set to 50% of the outer container */
+      .inner {
+         text-align: center; /* Center the text */
+         border: 2px solid; /* Border around the box */
+         background-color: lightblue; /* Light blue background */
+         height: 50%; /* Height is 50% of the outer container's height */
+      }
+   </style>
+</head>
+```
+
+
+### Height Property with Min Content Value
+
+To demonstrate the use of the min-content value for setting an element's height,
+here’s an example that illustrates how to ensure the height is just enough to display the content in a single line without wrapping or truncation:
+
+```html
+
+<head>
+   <style>
+      /* Outer container with a fixed height */
+      .outer {
+         background-color: lightgrey; /* Light grey background */
+         height: 200px; /* Fixed height for the outer container */
+         padding: 10px; /* Space inside the box */
+         box-sizing: border-box; /* Include padding in height */
+      }
+
+      /* Inner box with min-content height */
+      .inner {
+         text-align: center; /* Center the text */
+         border: 2px solid; /* Border around the box */
+         background-color: lightblue; /* Light blue background */
+         height: min-content; /* Height based on minimum content size */
+      }
+   </style>
+</head>
+
+```
+
+### Height Property with Max Content Value
+
+To adjust an element's height to fit the tallest content within it, we use the max-content value.
+This ensures that the height expands to accommodate the largest item or content, preventing any content from being cut off or wrapped. Here’s an example:
+
+```html
+
+<head>
+   <style>
+      /* Outer container with a fixed height */
+      .outer {
+         background-color: lightgrey; /* Light grey background */
+         height: 200px; /* Fixed height for the outer container */
+         padding: 10px; /* Space inside the box */
+         box-sizing: border-box; /* Include padding in height */
+      }
+
+      /* Inner box with max-content height */
+      .inner {
+         text-align: center; /* Center the text */
+         border: 2px solid; /* Border around the box */
+         background-color: lightblue; /* Light blue background */
+         height: max-content; /* Height based on maximum content size */
+      }
+   </style>
+</head>
+```
